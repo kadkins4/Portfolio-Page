@@ -2,7 +2,7 @@ html {
   /*background-image: url("~wdi/projects/portfolio/images/snow.png") center center cover no-repeat;*/
   /*background: #111a24;*/
   /*background-color: #111a24;*/
-  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+  /*background-image: url("https://www.transparenttextures.com/patterns/snow.png");*/
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-#bg-image {
+/*#bg-image {
   background-image: url(bg_pattern.png);
   position: fixed;
   opacity: 0.8;
@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
+}*/
 
 .container {
   margin: auto;
@@ -50,6 +50,11 @@ a {
   text-decoration: white;
   padding: 15px 40px 20px 30px;
   box-shadow: inset 0px -2px 1px rgba(250,250,250,0.8);
+  flex-grow: 5;
+}
+
+#fun {
+  flex-grow: 2;
 }
 
 header {
