@@ -1,5 +1,10 @@
 html {
   background-color: #F4F4E3;
+  /*text-transform: uppercase;*/
+  /*font-family: 'Athiti', sans-serif;*/
+  /*font-family: 'Orbitron', sans-serif;*/
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-family: 'Syncopate', sans-serif;*/
 }
 
 body {
@@ -34,25 +39,39 @@ nav a {
 nav a:hover {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  color: white;
+  color: #64686B;
+  /* find a grey-ish color */
   border-radius: 50%;
   transition: color 2s linear .5s, border-radius 2s linear .5s;
 }
-
-/*#change:hover {
-  color: white;
-  border-radius: 50%;
-  transition: color 2s linear .5s, border-radius 2s linear .5s;
-}*/
 
 nav a:active {
   color: white;
 }
 
-html {
-  /*text-transform: uppercase;*/
-  /*font-family: 'Athiti', sans-serif;*/
-  /*font-family: 'Orbitron', sans-serif;*/
-  /*font-family: 'Julius Sans One', sans-serif;*/
-  /*font-family: 'Syncopate', sans-serif;*/
+/* header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #364149, black;
+}
+h4 {
+  font-size: 24px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 200px;
+  margin: auto 50px auto 0;
 }
