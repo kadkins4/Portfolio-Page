@@ -5,11 +5,8 @@ Ideas to be introduced to portfolio
   - two prong site — regular is business/extremely professional … click toggle for 2eLLs version
 
 
-
 — Fix the background: Setup three main DIVs — using flex have the two on the outside using ``space-between`` but with no space between them and the middle… set the background img for those as the transparent backing — with the body/html as whatever bg color desired — use the middle div as the container for actual content
 	- justify-content: space-between
 	- align-items: stretch
-
-
 
 - Mobile first approach? Develop for small screens and change as screen gets larger
