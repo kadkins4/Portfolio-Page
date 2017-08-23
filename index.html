@@ -4,102 +4,60 @@
   <head>
     <meta charset="utf-8">
     <title>Kendall Adkins' Site</title>
-    <!-- <script src="js/app.module.js" charset="utf-8"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/ka.routes.js"></script>
+    <script src="js/controllers/who.controller.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Athiti|Julius+Sans+One|Sintony|Syncopate|Tenali+Ramakrishna" rel="stylesheet">
   </head>
 
-  <body>
+  <body data-ng-app="kaPort">
     <div class="container">
+
       <nav>
         <a href="#" id="change">kla</a>
         <!-- kla swaps to 2eLLs -->
         <!-- Who-Projects-CV-Contact: fixed but transparent-ish until hover -->
-        <a href="#">Who</a>
-        <a href="#">Projects</a>
-        <a href="#">CV</a>
-        <a href="#">Contact</a>
+        <a href="/#!/who">Who</a>
+        <a href="/#!/projects">Projects</a>
+        <a href="/#!/cv">CV</a>
+        <!-- <a href="#">Contact</a> -->
       </nav>
+
       <header>
         <!--Name & Picture-->
         <div class="prof">
           <h1>Kendall</h1>
           <hr>
-          <h4>Programmer &amp; Business Leader</h4>
+          <h4>FullStack Web Developer</h4>
           <hr>
           <h1>Adkins</h1>
         </div>
-        <img src="images/Adkins.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="images/Adkins1.jpg" alt="Profile Picture" class="profile-pic">
       </header>
 
-      <main>
-        <div class="control">
-          <h2 class="who-header">Who</h2>
-          <div class="who">
-            <!-- Slide through at a rate of 3-4 seconds? -->
-            <!-- move up to header? -->
-            <ul class="descriptor-slide">
-              <li>Full-Stack Web Developer</li>
-              <li>MD >> NC >> DC</li>
-              <li>DC United &amp; Chelsea</li>
-              <li>Indie Music</li>
-              <li>Traveler. Hiker. Runner.</li>
-              <li>Gamer</li>
-              <li>Ruby<span>:Rails</span> Enthusiast</li>
-            </ul>
-          </div>
+      <main class="data-ui-view"></main>
+
+      <footer>
+        <div class="icon-list">
+
+          <a href="mailto:adkins.kendall90@gmail.com"><img src="images/email.png" alt="SnailMail" class="icons"></a>
+          <a href="https://github.com/kadkins4"><img src="images/github.png" alt="RepoCentral" class="icons"></a>
+          <a href="https://www.instagram.com/kadkins4/"><img src="images/insta.png" alt="Thousand Word Social Media" class="icons"></a>
+          <a href="https://www.facebook.com/kadkins410"><img src="images/facebook.png" alt="Clever Social Media Reference Here" class="icons fb-icon"></a>
+          <a href="https://www.linkedin.com/in/adkinskendall/"><img src="images/linkedin.png" alt="Everybody's Successful" class="icons"></a>
+          <!-- Should I have the below on my regular page? ask instructors for advice -->
+          <a href="http://steamcommunity.com/id/st6theone/"><img src="images/steam.png" alt="Kappa" class="icons steam-icon"></a>
+          <a href="https://open.spotify.com/user/kadkins4"><img src="images/spotify.png" alt="*music quote here*" class="icons"></a>
+
         </div>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Morbi ut nulla tincidunt nisl suscipit viverra.
-          Cras tincidunt luctus massa, a convallis turpis gravida consectetur.
-          Curabitur a elit tellus. In efficitur.</p>
-        <!-- What questions 'need' to be answered for an understanding of background... -->
-        <!-- and / or are fun facts -->
-        <!-- possibly add small animations linked to 'fun facts' -->
-
-
-        <h2>Projects</h2>
-
-        <div class="project-zone">
-          <div class="project"><img src="images/quizzle.png" alt="Project" id="quizzle"></div>
-          <div class="project"><img src="" alt=""></div>
-          <div class="project"><img src="" alt=""></div>
-          <div class="project"><img src="" alt=""></div>
-        </div>
-
-      </main>
-
-      <h2>CV</h2>
-<hr>
-        <div class="cv">
-          <div class="timeline">
-
-          </div>
-
-          <button type="button" name="button" class="download-btn">pdf</button>
-<!-- What to do for this...? -->
-        </div>
-
-        <footer>
-
-          <div class="icon-list">
-
-            <a href=""mailto:adkins.kendall90@gmail.com""><img src="images/email.png" alt="SnailMail" class="icons"></a>
-            <a href="https://github.com/kadkins4"><img src="images/github.png" alt="RepoCentral" class="icons"></a>
-            <a href="https://www.instagram.com/kadkins4/"><img src="images/insta.png" alt="Thousand Word Social Media" class="icons"></a>
-            <a href="https://www.facebook.com/kadkins410"><img src="images/facebook.png" alt="Clever Social Media Reference Here" class="icons fb-icon"></a>
-            <a href="https://www.linkedin.com/in/adkinskendall/"><img src="images/linkedin.png" alt="Everybody's Successful" class="icons"></a>
-            <!-- Should I have the below on my regular page? ask instructors for advice -->
-            <a href="http://steamcommunity.com/id/st6theone/"><img src="images/steam.png" alt="Kappa" class="icons steam-icon"></a>
-            <a href="https://open.spotify.com/user/kadkins4"><img src="images/spotify.png" alt="*music quote here*" class="icons"></a>
-
-          </div>
-
       </footer>
-    </div>
 
+    </div>
   </body>
 </html>
