@@ -28,6 +28,6 @@
       controllerAs: 'vm',
       templateUrl: '/js/ng-views/cv.html'
     })
-    $urlRouterProvider.otherwise('/')
+    // $urlRouterProvider.otherwise('/')
   }
 })()
