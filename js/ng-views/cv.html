@@ -1,6 +1,11 @@
 <h2>CV</h2>
 <div class="cv">
-  <div class="timeline">
+  <div class="timeline" ng-controller="CvController as vm">
+    <ul>
+      <li ng-repeat="comm in vm.community">{{ comm.organization }}
+        <p>{{ comm.description }}</p>
+      </li>
+    </ul>
 
   </div>
 
