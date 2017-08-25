@@ -1,0 +1,129 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: #5c4d00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h4, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px auto;
+}
+
+h4 {
+  margin: 10px 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.nav {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+}
+
+footer p {
+  word-spacing: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  text-decoration: overline;
+}
+
+form {
+  text-align: center;
+}
+
+.title {
+ text-align: center;
+ font-style: oblique;
+}
+
+.tweet_input {
+  width: 30vw;
+  word-wrap: break-word;
+  line-height: 15px;
+  border-radius: 5%;
+  height: 60px;
+  padding: 5px;
+}
+
+.counter {
+  font-size: 10px;
+  line-height: 1px;
+}
+
+/* show */
+
+.response-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.response-img {
+  width: 23vw;
+  height: 35vh;
+  border: 3px solid rgba(200, 200, 200, .5);
+}
+
+small {
+  color: white;
+  font-size: 20px;
+  text-transform: lowercase;
+  background: rgba(200,200,200,.5);
+}
+
+.img-holder {
+  padding: 1%;
+  height: 100%;
+}
