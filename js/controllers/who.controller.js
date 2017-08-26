@@ -7,7 +7,6 @@
   ])
 
   function WhoController ($interval) {
-    this.myInterval = 5000
     this.attributes = [
       { content: 'Full-Stack Web Developer', info: 'Rails, AngularJS, ReactJS, & CSS3', img_url: '' },
       { content: 'MD >> NC >> DC', info: 'Grew up in Baltimore; college in Elon', img_url: '' },

@@ -2,6 +2,8 @@
 <div class="cv">
   <div class="timeline" ng-controller="CvController as vm">
 
+<!-- large div blocks per section <> alternating sides -->
+
     <h4>Job Experience</h4>
     <div ng-repeat="job in vm.job">
       <p>{{ job.title }} - {{ job.organization }}</p>

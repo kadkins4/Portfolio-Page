@@ -20,17 +20,20 @@ body {
   border-right: 1px solid rgba(200,200,200,.5);
 }
 
-nav {
+nav, .btn {
   font-family: 'Tenali Ramakrishna', sans-serif;
   font-weight: 600;
   font-size: 24px;
   width: 45%;
   height: 7%;
+  align-items: center;
+  margin: 5px 0 5px 0;
+}
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin: 5px 0 5px 0;
 }
 
 nav a {
@@ -78,9 +81,21 @@ h1 {
   color: #364149, black;
 }
 
+h4, h5 {
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: lowercase;
+}
+
 h4 {
   font-size: 24px;
-  font-family: 'Julius Sans One', sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 1.3em;
 }
 
 .profile-pic {
@@ -88,6 +103,41 @@ h4 {
   border: 3px solid #435961;
   height: 175px;
   margin: auto 50px auto 0;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 2px dotted red;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 3px solid #435961;
+  border-radius: 5%;
+  box-sizing: content-box;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #435961;
 }
 
 /* Who */
