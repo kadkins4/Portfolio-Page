@@ -1,10 +1,15 @@
   <div class="control">
+
     <h2 class="who-header">Who</h2>
+
     <div class="who">
+
       <div class="descriptor-slide" data-ng-controller="WhoController as vm">
+
         <p class="animated slideInRight" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.content }}</p>
         <br/>
         <p class="animated slideInLeft attr-info" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.info }}</p>
+
       </div>
     </div>
   </div>
