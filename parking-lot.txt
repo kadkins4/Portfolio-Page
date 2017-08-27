@@ -1,9 +1,5 @@
 Ideas to be introduced to portfolio
-  - animated person on the side (aside section)
-  - each link have an animation
   - education program
-  - two prong site — regular is business/extremely professional … click toggle for 2eLLs version
-
 
 — Fix the background: Setup three main DIVs — using flex have the two on the outside using ``space-between`` but with no space between them and the middle… set the background img for those as the transparent backing — with the body/html as whatever bg color desired — use the middle div as the container for actual content
 	- justify-content: space-between

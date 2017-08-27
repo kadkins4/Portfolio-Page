@@ -1,9 +1,31 @@
 <h2>CV</h2>
 <div class="cv">
-  <div class="timeline">
+  <div class="timeline" ng-controller="CvController as vm">
+
+<!-- large div blocks per section <> alternating sides -->
+
+    <h4>Job Experience</h4>
+    <div ng-repeat="job in vm.job">
+      <p>{{ job.title }} - {{ job.organization }}</p>
+      <p>{{ job.description }}</p>
+    </div>
+
+    <h4>Education</h4>
+    <div ng-repeat="edu in vm.education">
+      <img data-ng-src="{{ edu.img_url }}">
+      <p>{{ edu.school_name }} - {{ edu.end_date | date }}</p>
+      <p>{{ edu.description }}</p>
+    </div>
+
+    <h4>Tech Community</h4>
+    <div ng-repeat="comm in vm.community">
+      <p><a href="{{ comm.url }}">{{ comm.organization }}</a></p>
+      <p>{{ comm.description }}</p>
+    </div>
 
   </div>
 
-  <button type="button" name="button" class="download-btn">pdf</button>
-<!-- What to do for this...? -->
+
+
+  <button type="button" name="button" class="btn">pdf</button>
 </div>

@@ -1,16 +1,15 @@
   <div class="control">
+
     <h2 class="who-header">Who</h2>
+
     <div class="who">
+
       <div class="descriptor-slide" data-ng-controller="WhoController as vm">
+
         <p class="animated slideInRight" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.content }}</p>
+        <br/>
+        <p class="animated slideInLeft attr-info" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.info }}</p>
+
       </div>
     </div>
   </div>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Morbi ut nulla tincidunt nisl suscipit viverra.
-    Cras tincidunt luctus massa, a convallis turpis gravida consectetur.
-    Curabitur a elit tellus. In efficitur.</p>
-  <!-- What questions 'need' to be answered for an understanding of background... -->
-  <!-- and / or are fun facts -->
-  <!-- possibly add small animations linked to 'fun facts' -->

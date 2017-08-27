@@ -1,3 +1,5 @@
+/* find consistent line colors */
+
 html {
   background-color: #F4F4E3;
   /*text-transform: uppercase;*/
@@ -20,17 +22,20 @@ body {
   border-right: 1px solid rgba(200,200,200,.5);
 }
 
-nav {
+nav, .btn {
   font-family: 'Tenali Ramakrishna', sans-serif;
   font-weight: 600;
   font-size: 24px;
   width: 45%;
   height: 7%;
+  align-items: center;
+  margin: 5px 0 5px 0;
+}
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin: 5px 0 5px 0;
 }
 
 nav a {
@@ -48,7 +53,7 @@ nav a:hover {
   color: #64686B;
   /* find a grey-ish color */
   border-radius: 50%;
-  transition: color 2s linear .5s, border-radius 2s linear .5s;
+  transition: color 2s linear 0s, border-radius 2s linear 0s;
 }
 
 nav a:active {
@@ -78,9 +83,21 @@ h1 {
   color: #364149, black;
 }
 
+h4, h5 {
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: lowercase;
+}
+
 h4 {
   font-size: 24px;
-  font-family: 'Julius Sans One', sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 1.3em;
 }
 
 .profile-pic {
@@ -90,9 +107,68 @@ h4 {
   margin: auto 50px auto 0;
 }
 
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.brand {
+  margin: 2%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 3%;
+}
+
+.info {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  line-height: 1em;
+  letter-spacing: 2%;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+
+.btn {
+  padding: 20px 5px;
+  border: 3px solid #435961;
+  border-radius: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 8px;
+  color: #435961;
+  background-color: rgba(0,0,0,.4);
+}
+
+.btn:hover {
+  background-color: #435961;
+  border: 3px solid rgba(0,0,0,.4);
+  color: white;
+  transition: color 2s ease 0s, background-color 2s ease 0s;
+}
+
+.home .btn {
+  margin: 5% 0;
+  display: inline-block;
+}
+
 /* Who */
 main {
-  margin: 100px 0 100px 0;
+  margin: 5% 0 1% 0;
   display: flex;
   flex-direction: column;
 }
@@ -125,27 +201,27 @@ main {
 }
 
 .descriptor-slide {
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: bold;
   color: white;
   letter-spacing: 8px;
   text-align: center;
   position: absolute;
   top: 20%;
   padding: 10px;
-  background-color: rgba(200,200,200,.5);
+  background-color: rgba(200,200,200,.7);
   z-index: 5;
   text-transform: uppercase;
+}
+
+.attr-info {
+  text-transform: lowercase;
+  font-size: 20px;
 }
 
 /* Projects */
 
 /* CV */
-.download-btn {
-  border: 2px solid black;
-  background-color: white;
-
-  /* find colors */
-}
 
 /* Footer */
 /* Contact Me */
@@ -153,6 +229,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  border-top: 1px solid #435961;
 }
 
 .icon-list {
