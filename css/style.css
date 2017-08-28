@@ -131,6 +131,7 @@ h5 {
   font-family: 'Tenali Ramakrishna', sans-serif;
   line-height: 1em;
   letter-spacing: 2%;
+  text-align: center;
 }
 
 .button-holder {
@@ -255,7 +256,7 @@ footer {
   border-radius: 50%;
 }
 
-#quizzle {
+/*#quizzle {
   width: 100px;
   height: 100px;
-}
+}*/

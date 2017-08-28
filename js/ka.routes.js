@@ -12,8 +12,8 @@
     $stateProvider
     .state('home', {
       url: '/home',
-      controller: 'HomeController',
-      controllerAs: 'vm',
+      // controller: 'HomeController',
+      // controllerAs: 'vm',
       templateUrl: '/js/ng-views/home.html'
     })
     .state('who', {
