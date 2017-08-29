@@ -31,7 +31,8 @@
       { name: 'HTML5', confidence: 5, img_url: '' },
       { name: 'CSS3', confidence: 4, img_url: '' },
       { name: 'Sinatra', confidence: 3, img_url: '' },
-      { name: 'PostgreSQL', confidence: 3, img_url: '' }
+      { name: 'PostgreSQL', confidence: 3, img_url: '' },
+      { name: 'MEAN (Mongoose, Express, AngularJS, NodeJS)', confidence: 2, img_url: '' }
     ]
     this.job = [
       {

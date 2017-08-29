@@ -1,4 +1,8 @@
+
 <div class="project-zone" ng-controller="ProjectsController">
+  <p class="info">
+    Below are a list of some of the projects that I have completed as well as some that are in progress.  There is a description of each project, technology used, collaborators, and a link to the project and it's corresponding GitHub. If you would like to contribute, feel free to fork and submit a PR, for most I have next steps listed on the README.md if I am currently planning any additional features.
+  </p>
   <div class="project" ng-repeat="project in vm.projects">
     <h4>{{ project.name }}</h4>
     <div class="image">
@@ -6,6 +10,7 @@
     </div>
     <div class="description">
       {{ project.description }}
+      <hr>
     </div>
   </div>
 </div>

@@ -1,5 +1,6 @@
 html {
   background-color: #F4F4E3;
+  margin: 0;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
 }
 
 .container {
+  margin: 0;
   width: 80vw;
   padding: 1%;
   border-left: 1px solid rgba(200,200,200,.5);
@@ -19,16 +21,18 @@ nav, .btn {
   font-family: 'Tenali Ramakrishna', sans-serif;
   font-weight: 600;
   font-size: 24px;
-  width: 45%;
-  height: 7%;
   align-items: center;
   margin: 5px 0 5px 0;
 }
 
 nav {
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-self: flex-start;
+  width: 35vw;
+  height: 5vh;
 }
 
 nav a {
@@ -62,8 +66,11 @@ header {
 }
 
 .prof {
-  width: 50%;
+  max-width: 30vw;
+  max-height: 30vh;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 h1 {
@@ -94,8 +101,11 @@ h5 {
 
 .profile-pic {
   border-radius: 50%;
-  border: 3px solid #435961;
-  height: 175px;
+  border: 2px solid rgba(67,89,97,.5);
+  max-height: 30vh;
+  max-width: 30vw;
+  width: auto;
+  height: auto;
   margin: auto 50px auto 0;
 }
 
@@ -119,6 +129,10 @@ h5 {
   margin: 3%;
 }
 
+.welcome {
+  margin: 1% 15%;
+}
+
 .info {
   font-family: 'Tenali Ramakrishna', sans-serif;
   line-height: 1em;
@@ -137,19 +151,20 @@ h5 {
 
 .btn {
   padding: 20px 5px;
-  border: 3px solid #435961;
+  border: 1px solid rgba(67,89,97,1);
   border-radius: 5%;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   line-height: 8px;
+  width: 15vw;
+  height: .5vh;
   color: #435961;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(67,89,97,.5);
 }
 
 .btn:hover {
-  background-color: #435961;
-  border: 3px solid rgba(0,0,0,.4);
+  background-color: rgba(67, 89, 97, 1);
   color: white;
   transition: color 2s ease 0s, background-color 2s ease 0s;
 }
@@ -171,6 +186,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0 0 0 0;
 }
 
 .who-header {
@@ -219,17 +235,109 @@ main {
   justify-content: center;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 1%;
+}
+
+.image {
+  padding: 1%;
+}
+
+.description {
+  width: 60vw;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
 .thumbnail {
-  width: 40vw;
-  height: 40vh;
+  max-width: 43vw;
+  max-height: 40vh;
+  width: auto;
+  height: auto;
   border: 2px solid rgba(200,200,200,.5);
   text-align: center;
 }
 
+.about {
+  line-height: 1.2em;
+}
+
 /* CV */
+.exp-headers {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(200,200,200,.5);
+  border-top: 1px solid black;
+}
 
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 60vw;
+  max-height: 40vh;
+  width: auto;
+  height: auto;
+  margin: 5% auto;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  max-height: 20vh;
+  width: auto;
+  height: auto;
+  border: 1px dotted red;
+}
+
+.skillthumbnail {
+  border: 1px dotted blue;
+}
+
+.cvthumbnail {
+  max-width: 43vw;
+  max-height: 40vh;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.exp-left {
+  padding: 0 2% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 40vw;
+  width: auto;
+}
+
+.exp-right {
+  padding: 0 0 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 40vw;
+  width: auto;
+}
 /* Footer */
-
 /* Contact Me */
 footer {
   display: flex;

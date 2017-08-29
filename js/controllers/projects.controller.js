@@ -18,8 +18,8 @@
       { name: 'TWiCS', img_url: 'images/twics.png', description: 'An app that transforms your tweets or other person`s tweets into pictures. Hilarious and ridiculous but sure to make you smile, laugh, or stare in confusion. Created with two other developers: Charles Cox & Frew Nagash.', tech: ['Ruby', 'Ruby on Rails', 'AngularJS', 'HTML5', 'CSS3', 'PgSQL'], git_url: '' },
       { name: 'Music Database', img_url: 'images/music.png', description: 'Add your favorite songs to this database to share with others.', tech: ['AngularJS', 'HTML5', 'CSS3'], git_url: '' },
       { name: 'D2Hub', img_url: 'images/d2hub.png', description: '', tech: ['HTML5', 'CSS3', 'Ruby', 'Ruby on Rails', 'ActiveRecord', 'PgSQL'], git_url: '' },
-      { name: 'REY Photographs', img_url: '', description: 'In Progress: A website for a local Washington DC photographer, to showcase her work.', tech: ['HTML5', 'CSS3', 'Ruby on Rails', 'AngularJS'], git_url: '' },
-      { name: 'Web Dev Prompter', img_url: '', description: 'In Progress: Creates a Random Scheme and Idea for you to practice creating static or dynamic sites. Plenty of options an difficulties to meet your needs.', tech: ['HTML5', 'CSS3', 'Ruby on Rails', 'AngularJS'], git_url: '' }
+      { name: 'REY Photographs', img_url: '', description: 'In Progress: A website for a local DC photographer to showcase her work.', tech: ['HTML5', 'CSS3', 'Ruby on Rails', 'AngularJS'], git_url: '' },
+      { name: 'Web Dev Prompter', img_url: '', description: 'In Progress: Creates a Random Scheme and Idea for you to practice creating static or dynamic sites. Plenty of options and difficulties to meet your needs.', tech: ['HTML5', 'CSS3', 'Ruby on Rails', 'AngularJS'], git_url: '' }
     ]
     return {
       all: all

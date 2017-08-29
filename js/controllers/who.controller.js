@@ -20,7 +20,7 @@
     // have another interval, initiates slightly ahead -- triggers function for ng-class (exit animation)
 
     // every interval, increase index
-    $interval(carousel.bind(this), 6000)
+    $interval(carousel.bind(this), 4000)
     // every interval triggers this function to animate next attribute
     this.carouselIndex = 0
     function carousel () {
