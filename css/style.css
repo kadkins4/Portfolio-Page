@@ -1,12 +1,5 @@
-/* find consistent line colors */
-
 html {
   background-color: #F4F4E3;
-  /*text-transform: uppercase;*/
-  /*font-family: 'Athiti', sans-serif;*/
-  /*font-family: 'Orbitron', sans-serif;*/
-  /*font-family: 'Julius Sans One', sans-serif;*/
-  /*font-family: 'Syncopate', sans-serif;*/
 }
 
 body {
@@ -51,7 +44,6 @@ nav a:hover {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   color: #64686B;
-  /* find a grey-ish color */
   border-radius: 50%;
   transition: color 2s linear 0s, border-radius 2s linear 0s;
 }
@@ -234,11 +226,10 @@ main {
   text-align: center;
 }
 
-
-
 /* CV */
 
 /* Footer */
+
 /* Contact Me */
 footer {
   display: flex;
