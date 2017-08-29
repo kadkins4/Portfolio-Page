@@ -2,7 +2,7 @@
   <div class="project" ng-repeat="project in vm.projects">
     <h4>{{ project.name }}</h4>
     <div class="image">
-      <img src="{{ project.img_url }}" alt="{{ project.name }}" class="thumbnail">
+      <img ng-src="{{ project.img_url }}" alt="{{ project.name }}" class="thumbnail">
     </div>
     <div class="description">
       {{ project.description }}
