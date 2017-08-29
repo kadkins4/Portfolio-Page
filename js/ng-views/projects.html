@@ -1,8 +1,9 @@
-<h2>Projects</h2>
-
 <div class="project-zone" ng-controller="ProjectsController">
-  <div class="project" ng-repeat="project in vm.list">
-    <img src="" alt="{{ project.name }}" class="thumbnail">
+  <div class="project" ng-repeat="project in vm.projects">
+    <h4>{{ project.name }}</h4>
+    <div class="image">
+      <img src="{{ project.img_url }}" alt="{{ project.name }}" class="thumbnail">
+    </div>
     <div class="description">
       {{ project.description }}
     </div>
