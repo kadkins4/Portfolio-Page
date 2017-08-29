@@ -3,10 +3,10 @@
 (function () {
   angular.module('kaPort')
   .controller('HomeController', [
-    HomeControllerFunction
+    HomeController
   ])
 
-  function HomeControllerFunction () {
+  function HomeController () {
     // any actions necessary?
   }
 })()

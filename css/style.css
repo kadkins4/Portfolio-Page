@@ -131,6 +131,7 @@ h5 {
   font-family: 'Tenali Ramakrishna', sans-serif;
   line-height: 1em;
   letter-spacing: 2%;
+  text-align: center;
 }
 
 .button-holder {
@@ -220,6 +221,20 @@ main {
 }
 
 /* Projects */
+.project-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 40vw;
+  height: 40vh;
+  border: 2px solid rgba(200,200,200,.5);
+  text-align: center;
+}
+
+
 
 /* CV */
 
@@ -253,9 +268,4 @@ footer {
   height: 20px;
   border: 2px solid black;
   border-radius: 50%;
-}
-
-#quizzle {
-  width: 100px;
-  height: 100px;
 }
