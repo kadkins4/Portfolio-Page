@@ -5,15 +5,15 @@
   .config([
     '$stateProvider',
     '$urlRouterProvider',
+    '$locationProvider',
     Router
   ])
 
-  function Router ($stateProvider, $urlRouterProvider) {
+  function Router ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true)
     $stateProvider
     .state('home', {
       url: '/home',
-      // controller: 'HomeController',
-      // controllerAs: 'vm',
       templateUrl: 'js/ng-views/home.html'
     })
     .state('who', {
