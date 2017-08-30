@@ -285,10 +285,20 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-content: center;
-  max-width: 60vw;
-  max-height: 40vh;
+  max-width: 65vw;
+  width: auto;
+  height: auto;
+  margin: 5% auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 65vw;
   width: auto;
   height: auto;
   margin: 5% auto;
@@ -298,14 +308,21 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 20vw;
-  max-height: 20vh;
+  max-height: 15vh;
   width: auto;
   height: auto;
-  border: 1px dotted red;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 3% 2%;
 }
 
 .skillthumbnail {
-  border: 1px dotted blue;
+  max-width: 13vw;
+  max-height: 13vh;
+  width: auto;
+  height: auto;
 }
 
 .cvthumbnail {

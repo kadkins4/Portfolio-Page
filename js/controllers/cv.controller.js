@@ -24,15 +24,15 @@
       }
     ]
     this.skills = [
-      { name: 'Ruby', confidence: 3, img_url: '' },
-      { name: 'JavaScript', confidence: 3, img_url: '' },
-      { name: 'Rails', confidence: 4, img_url: '' },
-      { name: 'AngularJS', confidence: 3, img_url: '' },
-      { name: 'HTML5', confidence: 5, img_url: '' },
-      { name: 'CSS3', confidence: 4, img_url: '' },
-      { name: 'Sinatra', confidence: 3, img_url: '' },
-      { name: 'PostgreSQL', confidence: 3, img_url: '' },
-      { name: 'MEAN (Mongoose, Express, AngularJS, NodeJS)', confidence: 2, img_url: '' }
+      { name: 'Ruby', confidence: 3, img_url: '../../images/icon_ruby.png' },
+      { name: 'JavaScript', confidence: 3, img_url: '../../images/icon_js.png' },
+      { name: 'Rails', confidence: 4, img_url: '../../images/icon_rails.png' },
+      { name: 'AngularJS', confidence: 3, img_url: '../../images/icon_angularjs.png' },
+      { name: 'HTML5', confidence: 5, img_url: '../../images/icon_html.png' },
+      { name: 'CSS3', confidence: 4, img_url: '../../images/icon_css.png' },
+      { name: 'Sinatra', confidence: 3, img_url: '../../images/icon_sinatra.svg' },
+      { name: 'PostgreSQL', confidence: 3, img_url: '../../images/icon_pgsql.png' },
+      { name: 'MEAN', confidence: 2, img_url: '../../images/icon_mean.png' }
     ]
     this.job = [
       {
