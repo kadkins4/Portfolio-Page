@@ -24,20 +24,20 @@
       }
     ]
     this.skills = [
-      { name: 'Ruby', confidence: 3, img_url: '' },
-      { name: 'JavaScript', confidence: 3, img_url: '' },
-      { name: 'Rails', confidence: 4, img_url: '' },
-      { name: 'AngularJS', confidence: 3, img_url: '' },
-      { name: 'HTML5', confidence: 5, img_url: '' },
-      { name: 'CSS3', confidence: 4, img_url: '' },
-      { name: 'Sinatra', confidence: 3, img_url: '' },
-      { name: 'PostgreSQL', confidence: 3, img_url: '' },
-      { name: 'MEAN (Mongoose, Express, AngularJS, NodeJS)', confidence: 2, img_url: '' }
+      { name: 'Ruby', confidence: 3, img_url: '../../images/icon_ruby.png' },
+      { name: 'JavaScript', confidence: 3, img_url: '../../images/icon_js.png' },
+      { name: 'Rails', confidence: 4, img_url: '../../images/icon_rails.png' },
+      { name: 'AngularJS', confidence: 3, img_url: '../../images/icon_angularjs.png' },
+      { name: 'HTML5', confidence: 5, img_url: '../../images/icon_html.png' },
+      { name: 'CSS3', confidence: 4, img_url: '../../images/icon_css.png' },
+      { name: 'Sinatra', confidence: 3, img_url: '../../images/icon_sinatra.svg' },
+      { name: 'PostgreSQL', confidence: 3, img_url: '../../images/icon_pgsql.png' },
+      { name: 'MEAN', confidence: 2, img_url: '../../images/icon_mean.png' }
     ]
     this.job = [
       {
         title: 'Freelance Web Developer',
-        organization: 'Self',
+        organization: '',
         start_year: 2017,
         end_year: 0,
         current: true,
@@ -50,8 +50,8 @@
         start_year: 2015,
         end_year: 2017,
         current: false,
-        description: 'Managed 50+ AmeriCorps VISTA volunteers; includes recruitment, events, and training Increased retention rate of 8% in one year via facilitating monthly meetings, conducting individual wellness check-ins, & implementing communication channels for the nationwide team Planned, led, & executed four team retreats, policy efforts via meetings with staff of Congress, Theory of Change working group & participated in strategic planning working groups.',
-        img_url: ''
+        description: 'A non-profit who\'s mission is to expose underrepresented communities to STEM fields by way of mentors.  I managed 50+ AmeriCorps VISTA volunteers; includes recruitment, events, and training Increased retention rate of 8% in one year via facilitating monthly meetings, conducting individual wellness check-ins, & implementing communication channels for the nationwide team Planned, led, & executed four team retreats, policy efforts via meetings with staff of Congress, Theory of Change working group & participated in strategic planning working groups.',
+        img_url: '../../images/logo_us2020.png'
       },
       {
         title: 'Executive Team Leader',
@@ -59,8 +59,8 @@
         start_year: 2013,
         end_year: 2015,
         current: false,
-        description: 'Led 60+ team members on the sales floor (100+ indirectly) in an $80 million store. Planned, staffed, & completed multiple large remodels (largest totaling $80k in expenses); resulted in a 2.5% gross margin increase. Mentored several team members; 7 earned promotions at the store.',
-        img_url: ''
+        description: 'As an Executive team lead, I led 60+ team members on the sales floor (100+ indirectly) in an $80 million store. Planned, staffed, & completed multiple large remodels (largest totaling $80k in expenses); resulted in a 2.5% gross margin increase. Mentored several team members; 7 earned promotions at the store.',
+        img_url: '../../images/logo_target.png'
       }
     ]
     this.community = [
@@ -71,7 +71,7 @@
         current: true,
         end_date: '',
         description: 'I attend twice a month and the group works with non-profit organizations and local businesses to build them web applications, landing pages, or sift through data that would otherwise be too difficult for them to do without assistance.',
-        img_url: '',
+        img_url: '../../images/logo_codefor.png',
         url: 'https://codefordc.org/'
       }
     ]

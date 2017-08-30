@@ -1,9 +1,15 @@
 <div class="cv">
   <div class="timeline" ng-controller="CvController as vm">
 
+  <div class="experience">
+    <a href="#" class="btn">Hire...</a>
+    <a href="../../kendall_adkins_resume.pdf" download="KendallAdkins-Resume" class="btn">download pdf resume</a>
+    <a href="mailto:adkins.kendall90@gmail.com?subject=Freelance Inquiry&body=**Thanks for your interest, please include in this email your name, organization/hobby, timeframe, and other pertinent information. Take care -Kendall**" class="btn">Freelance...</a>
+  </div>
+
 <!-- large div blocks per section <> alternating sides -->
     <h4 class="exp-headers">Languages/Frameworks</h4>
-    <div class="experience">
+    <div class="skills-container">
       <div ng-repeat="skill in vm.skills" class="skill">
         <img ng-src="{{ skill.img_url }}" alt="{{ skill.name }}" class="skillthumbnail">
         <p>{{ skill.name }}</p>
@@ -16,7 +22,7 @@
         <img data-ng-src="{{ job.img_url }}" class="cvthumbnail">
       </div>
       <div class="exp-right">
-        <p>{{ job.title }} - {{ job.organization }}</p>
+        <p class="title">{{ job.title }} - {{ job.organization }}</p>
         <p>{{ job.description }}</p>
       </div>
     </div>
@@ -24,7 +30,7 @@
     <h4 class="exp-headers">Tech Community</h4>
     <div ng-repeat="comm in vm.community" class="experience">
       <div class="exp-left">
-        <p><a href="{{ comm.url }}">{{ comm.organization }}</a></p>
+        <p><a href="{{ comm.url }}" class="title">{{ comm.organization }}</a></p>
         <p>{{ comm.description }}</p>
       </div>
       <div class="exp-right">
@@ -38,14 +44,12 @@
         <img data-ng-src="{{ edu.img_url }}" class="cvthumbnail">
       </div>
       <div class="exp-right">
-        <p>{{ edu.school_name }} - {{ edu.end_date | date }}</p>
+        <p  class="title">{{ edu.school_name }} - {{ edu.end_date | date }}</p>
         <p>{{ edu.description }}</p>
       </div>
     </div>
 
   </div>
 
-
-
-  <button type="button" name="button" class="btn">pdf</button>
+  <a href="../../kendall_adkins_resume.pdf" download="KendallAdkins-Resume" class="btn">download pdf resume</a>
 </div>
