@@ -11,7 +11,7 @@
     <h4 class="exp-headers">Languages/Frameworks</h4>
     <div class="skills-container">
       <div ng-repeat="skill in vm.skills" class="skill">
-        <img ng-src="{{ skill.img_url }}" alt="{{ skill.name }}" class="skillthumbnail">
+        <img data-ng-src="{{ skill.img_url }}" alt="{{ skill.name }}" class="skillthumbnail">
         <p>{{ skill.name }}</p>
       </div>
     </div>
