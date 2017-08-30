@@ -286,12 +286,16 @@ span {
   font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+.timeline {
+  width: 90vw;
+}
+
 .experience {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  max-width: 65vw;
+  max-width: 75vw;
   width: auto;
   height: auto;
   margin: 5% auto;
