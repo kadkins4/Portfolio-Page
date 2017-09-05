@@ -26,7 +26,7 @@
     this.skills = [
       { name: 'Ruby', confidence: 3, img_url: 'images/icon_ruby.png' },
       { name: 'JavaScript', confidence: 3, img_url: 'images/icon_js.png' },
-      { name: 'Rails', confidence: 4, img_url: 'images/icon_rails.png' },
+      { name: 'Rails', confidence: 5, img_url: 'images/icon_rails.png' },
       { name: 'AngularJS', confidence: 3, img_url: 'images/icon_angularjs.png' },
       { name: 'HTML5', confidence: 5, img_url: 'images/icon_html.png' },
       { name: 'CSS3', confidence: 4, img_url: 'images/icon_css.png' },
