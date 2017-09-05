@@ -32,7 +32,8 @@
       { name: 'CSS3', confidence: 4, img_url: 'images/icon_css.png' },
       { name: 'Sinatra', confidence: 3, img_url: 'images/icon_sinatra.svg' },
       { name: 'PostgreSQL', confidence: 3, img_url: 'images/icon_pgsql.png' },
-      { name: 'MEAN', confidence: 2, img_url: 'images/icon_mean.png' }
+      { name: 'MEAN', confidence: 2, img_url: 'images/icon_mean.png' },
+      { name: 'ReactJS', confidence: 2, img_url: 'images/icon_react.svg' }
     ]
     this.job = [
       {
