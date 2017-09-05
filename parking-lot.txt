@@ -6,3 +6,5 @@ Ideas to be introduced to portfolio
 	- align-items: stretch
 
 - Mobile first approach? Develop for small screens and change as screen gets larger
+
+- FreeLance logo = signature?
