@@ -8,3 +8,7 @@ Ideas to be introduced to portfolio
 - Mobile first approach? Develop for small screens and change as screen gets larger
 
 - FreeLance logo = signature?
+
+- Point Hire and Freelance to separate google docs and populate responses to a google excel sheet
+
+- 
