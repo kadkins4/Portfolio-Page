@@ -2,7 +2,7 @@
   <div class="timeline" ng-controller="CvController as vm">
 
   <div class="experience">
-    <a href="#" class="btn">Hire...</a>
+    <a href="mailto:adkins.kendall90@gmail.com?subject=Job Opportunity&body=**Thanks for your interest, I look forward to hearing about the opportunity! Take care -Kendall**" class="btn">Hire...</a>
     <a href="../../kendall_adkins_resume.pdf" download="KendallAdkins-Resume" class="btn">download pdf resume</a>
     <a href="mailto:adkins.kendall90@gmail.com?subject=Freelance Inquiry&body=**Thanks for your interest, please include in this email your name, organization/hobby, timeframe, and other pertinent information. Take care -Kendall**" class="btn">Freelance...</a>
   </div>
@@ -44,7 +44,7 @@
         <img data-ng-src="{{ edu.img_url }}" class="cvthumbnail">
       </div>
       <div class="exp-right">
-        <p  class="title">{{ edu.school_name }} - {{ edu.end_date | date }}</p>
+        <p  class="title">{{ edu.school_name }} - {{ edu.end_date | date : "yyyy" }}</p>
         <p>{{ edu.description }}</p>
       </div>
     </div>
