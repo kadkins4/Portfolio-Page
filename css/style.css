@@ -287,7 +287,8 @@ span {
 }
 
 .timeline {
-  width: 75vw;
+  max-width: 72vw;
+  width: auto;
 }
 
 .experience {
@@ -295,7 +296,7 @@ span {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  max-width: 65vw;
+  max-width: 60vw;
   width: auto;
   height: auto;
   margin: 5% auto;
