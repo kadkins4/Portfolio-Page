@@ -8,12 +8,12 @@
 
   function WhoController ($interval) {
     this.attributes = [
-      { content: 'Full-Stack Web Developer', info: 'Rails, AngularJS, ReactJS, & CSS3', img_url: '../images/desk.jpg' },
-      { content: 'MD >> NC >> DC', info: 'Grew up in Baltimore; college in Elon', img_url: '' },
-      { content: 'DC United & Chelsea', info: 'Frank Lampard, Didier Drogba, & Tobin Heath', img_url: '' },
-      { content: 'Indie Music', info: 'The Black Keys, Lewis Del Mar, Alt-J, & Misterwives', img_url: '' },
-      { content: 'Traveler. Hiker. Runner.', info: 'Triathlon, Tough Mudder, and ...', img_url: '' },
-      { content: 'Gamer', info: 'Video Games & Board Games', img_url: '' }
+      { content: 'Full-Stack Web Developer', info: 'Rails, AngularJS, ReactJS, & CSS3' },
+      { content: 'MD >> NC >> DC', info: 'Grew up in Baltimore; college in Elon' },
+      { content: 'DC United & Chelsea', info: 'Frank Lampard, Didier Drogba, & Tobin Heath' },
+      { content: 'Indie Music', info: 'The Black Keys, Lewis Del Mar, Alt-J, & Misterwives' },
+      { content: 'Traveler. Hiker. Runner.', info: 'Triathlon, Tough Mudder, and ...' },
+      { content: 'Gamer', info: 'Video Games & Board Games' }
     ]
 
     // lacking exit animation, seems clunky
