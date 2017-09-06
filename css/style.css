@@ -118,7 +118,7 @@ h5 {
 }
 
 .brand {
-  margin: 2%;
+  margin: 4% 10%;
 }
 
 .button-container {
@@ -129,13 +129,9 @@ h5 {
   margin: 3%;
 }
 
-.welcome {
-  margin: 1% 15%;
-}
-
 .info {
   font-family: 'Tenali Ramakrishna', sans-serif;
-  line-height: 1em;
+  line-height: 1.2em;
   letter-spacing: 2%;
   text-align: center;
 }
@@ -183,6 +179,7 @@ main {
 
 span {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .control {
@@ -265,10 +262,6 @@ span {
   height: auto;
   border: 2px solid rgba(200,200,200,.5);
   text-align: center;
-}
-
-.about {
-  line-height: 1.2em;
 }
 
 /* CV */
