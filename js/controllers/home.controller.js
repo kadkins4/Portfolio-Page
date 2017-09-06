@@ -7,6 +7,5 @@
   ])
 
   function HomeController () {
-    // any actions necessary?
   }
 })()
