@@ -208,6 +208,7 @@ span {
   justify-content: center;
   align-self: center;
   position: relative;
+  border: 3px solid rgba(200,200,200,.6);
 }
 
 .descriptor-slide {
@@ -219,7 +220,8 @@ span {
   position: absolute;
   top: 20%;
   padding: 10px;
-  background-color: rgba(200,200,200,.7);
+  background-color: rgba(200,200,200,.6);
+  border: 1px solid rgba(200,200,200,.3);
   z-index: 5;
   text-transform: uppercase;
 }
@@ -385,14 +387,11 @@ footer {
 
 .icons {
   height: 25px;
-}
-
-.fb-icon {
-  height: 27px;
-}
-
-.steam-icon {
-  height: 20px;
-  border: 2px solid black;
+  border: 1px solid rgba(0,0,0,1);
   border-radius: 50%;
+}
+
+.icons:hover {
+  background-color: rgba(67, 89, 97, .5);
+  transition: background-color .75s ease 0s;
 }
