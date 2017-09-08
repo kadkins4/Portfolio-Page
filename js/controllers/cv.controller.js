@@ -12,7 +12,7 @@
         school_name: 'General Assembly DC',
         start_date: 2017,
         end_date: 2017,
-        description: 'Will graduate from General Assembly DC in September 2017 from the Web Development Immersive Program.  A 12-week 500 hour full-time program where I learned several different technologies including, JavaScript & Ruby.',
+        description: 'Will graduate from General Assembly DC in September 2017 from the Web Development Immersive Program.  A 12-week 500 hour full-time program where I\'ve learned several different technologies including, JavaScript & Ruby.',
         img_url: 'images/ga_logo.png'
       },
       {
@@ -52,7 +52,7 @@
         start_year: 2015,
         end_year: 2017,
         current: false,
-        description: 'A non-profit who\'s mission is to expose underrepresented communities to STEM fields by way of mentors.  I managed 50+ AmeriCorps VISTA volunteers; includes recruitment, events, and training Increased retention rate of 8% in one year via facilitating monthly meetings, conducting individual wellness check-ins, & implementing communication channels for the nationwide team. Planned, led, & executed four team retreats, policy efforts via meetings with staff of Congress, Theory of Change working group & participated in strategic planning working groups.',
+        description: 'A non-profit whose mission is to expose underrepresented communities to STEM fields by way of mentors.  I managed 50+ AmeriCorps VISTA volunteers; includes recruitment, events, and training. Increased retention rate of 8% in one year via facilitating monthly meetings, conducting individual wellness check-ins, & implementing communication channels for the nationwide team. Planned, led, & executed four team retreats, policy efforts via meetings with staff of Congress, Theory of Change working group & participated in strategic planning working groups.',
         img_url: 'images/logo_us2020.png'
       },
       {
