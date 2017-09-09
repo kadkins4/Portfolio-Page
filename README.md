@@ -11,4 +11,5 @@
 ## Other Projects
   Feel free to check out my other projects, most should have a README about the processes I took already and the steps that I am looking to take in the future (in addition to, how you can submit PRs, suggestions, etc.)
 
-### Thanks, Kendall
+### Take care,
+### Kendall

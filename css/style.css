@@ -170,6 +170,11 @@ h5 {
   display: inline-block;
 }
 
+.form-holder {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Who */
 main {
   margin: 5% 0 1% 0;
