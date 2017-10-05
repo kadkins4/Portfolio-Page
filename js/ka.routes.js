@@ -15,13 +15,9 @@
     $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'js/ng-views/home.html'
-    })
-    .state('who', {
-      url: '/who',
-      controller: 'WhoController',
-      controllerAs: 'vm',
-      templateUrl: 'js/ng-views/who.html'
+      templateUrl: 'js/ng-views/home.html',
+      controller: 'HomeController',
+      controllerAs: 'vm'
     })
     .state('projects', {
       url: '/projects',

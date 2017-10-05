@@ -1,25 +1,34 @@
 <div class="home">
   <div class="brand">
 
-    <h5>'A well-rounded web developer with strong business leadership experience who ignites organizations by
-innovating and building strong relationships through transparency, fresh perspectives, and positivity!'</h5>
+    <h5>'Clean and simple designs with great functionality.  That's the hallmark of a great website or application.'</h5>
   </div>
 
-  <!-- <div class="welcome">
-    <p class="info">Thanks for visiting my website, please check out the tabs up top to see my projects and learn more about me.  Feel free to contact me about open positions, freelance opportunities, any other opportunities, or just to connect via social media or otherwise.</p>
-  </div> -->
+  <div class="control">
+
+    <h2 class="who-header">Who</h2>
+
+    <div class="who">
+
+      <div class="descriptor-slide" data-ng-controller="HomeController as vm">
+
+        <p class="animated slideInRight" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.content }}</p>
+        <br/>
+        <p class="animated slideInLeft attr-info" data-ng-repeat="attr in vm.attributes" data-ng-show="vm.carouselIndex==$index">{{ attr.info }}</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="brand">
+    <p class="info"><span> CAREER.</span> Started in retail management and non-profit management. Love programming websites and applications especially in AngularJS or Rails, like this site.  <span>LOCATION.</span> Grew up in Baltimore, MD and attended Elon University in NC and made my way back up to the DMV. <span>SOCCER.</span> Fan of all sports but mostly soccer and NCAA basketball. March Madness and World Cup are my all-time favorite events. <span>MUSIC.</span> Can't play the guitar despite attempts over the past few years, but attend a variety of live shows, especially indie rock. <span> ACTIVE.</span>  One triathlon, several 5ks, and countless hiking trips. <span>COMPETITIVE.</span> A competitive team player, growing up playing basketball and soccer. Always a competitor even when it comes to board/video games.</p>
+  </div>
 
   <div class="button-container">
 
     <div class="button-holder">
-      <p class="info">Looking to hire a forward-thinking web developer?</p>
-      <a href="mailto:adkins.kendall90@gmail.com?subject=Job Opportunity&body=**Thanks for your interest, I look forward to hearing about the opportunity! Take care -Kendall**" class="btn">Hire...</a>
-    </div>
-
-
-    <div class="button-holder">
-      <p class="info">Need a website or application for your organization or hobby?</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScaovgm5884mQYqRTCRZra-B2C9ZJ76g20AyZkS7bQXj3g7dw/viewform" class="btn">Freelance...</a>
+      <p class="info">Looking to hire a forward-thinking web developer? </br> Need a website or application for your organization or hobby? </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScaovgm5884mQYqRTCRZra-B2C9ZJ76g20AyZkS7bQXj3g7dw/viewform" class="btn">Contact Me</a>
     </div>
 
   </div>

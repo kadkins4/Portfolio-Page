@@ -146,9 +146,9 @@ h5 {
 }
 
 .btn {
-  padding: 20px 5px;
+  padding: 15px 5px;
   border: 1px solid rgba(67,89,97,1);
-  border-radius: 5%;
+  border-radius: 3%;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -166,7 +166,7 @@ h5 {
 }
 
 .home .btn {
-  margin: 5% 0;
+  margin: 1% 0 5% 0;
   display: inline-block;
 }
 
