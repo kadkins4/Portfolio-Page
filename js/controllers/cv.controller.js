@@ -35,6 +35,9 @@
       { name: 'MEAN', confidence: 2, img_url: 'images/icon_mean.png' },
       { name: 'ReactJS', confidence: 3, img_url: 'images/icon_react.svg' },
       { name: 'Vue.JS', confidence: 2, img_url: 'images/icon_vuejs.png' }
+      // { name: 'Wordpress', confidence: 4, img_url: 'images/icon_wordpress.png' },
+      // { name: 'PHP', confidence: 3, img_url: 'images/icon_php.png' },
+      // { name: 'Wix', confidence: 2, img_url: 'images/icon_wix.png' }
     ]
     this.job = [
       {
