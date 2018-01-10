@@ -21,6 +21,8 @@
       // { id: 7, name: 'nspire', img_url: '', description: 'In Progress: Creates a Random Scheme and Idea for you to practice creating static or dynamic sites. Plenty of options and difficulties to meet your needs.', tech: ['HTML5', 'CSS3', 'VueJS'], git_url: 'https://github.com/kadkins4/Nspire-Prompts', live_url: '' },
       { id: 1, name: 'The Cipher Brief', img_url: 'images/tcb.png', description: 'A startup news organization which specializes in security information.  When I joined as a contractor, they had a functioning Wordpress website, but were in need of a lot more functionality and needed to craft a better user experience.  Working on this project, I work with PHP, to continue to build out their custom theme, JS, and CSS3. I am still working for this organization as a part-time contractor.', tech: ['Wordpress', 'CSS3', 'PHP', 'JavaScript'], git_url: '', live_url: 'https://thecipherbrief.com' },
       { id: 4, name: 'The Cipher Brief: Conference Site', img_url: 'images/tcbconf.png', description: 'While working with The Cipher Brief, they informed me that they were in need of a conference website in very little time.  After several discussions, we decided that the best option would be utilizing Wix.', tech: ['Wix', 'CSS3', 'HTML5', 'JavaScript'], git_url: '', live_url: 'https://tcbconference.com' }
+      { id: 5, name: 'D2Hub', img_url: 'images/d2hub.png', description: 'An application that helps new players get acclimated to one of the largest, most complex, and competitive PC games out right now.  Provides users with information about the 115 heroes and techniques to learn and use them.  This was created with Ruby on Rails with full CRUD without an API. I will be adding more models and connecting to an API in the future with a lot more functionality.', tech: ['HTML5', 'CSS3', 'Ruby', 'Ruby on Rails', 'ActiveRecord', 'PgSQL'], git_url: 'https://github.com/kadkins4/Project-2', live_url: '' }
+      // { id: 7, name: 'nspire', img_url: '', description: 'In Progress: Creates a Random Scheme and Idea for you to practice creating static or dynamic sites. Plenty of options and difficulties to meet your needs.', tech: ['HTML5', 'CSS3', 'VueJS'], git_url: 'https://github.com/kadkins4/Nspire-Prompts', live_url: '' }
     ]
     return {
       all: all
@@ -43,7 +45,10 @@
       JavaScript: 'icon_js.png',
       PgSQL: 'icon_pgsql.png',
       Rails: 'icon_rails.png',
-      MEAN: 'icon_mean.png'
+      MEAN: 'icon_mean.png',
+      Wordpress: '',
+      PHP: '',
+      Wix: ''
     }
   }
 })()
