@@ -12,6 +12,7 @@
 
   function projectsService () {
     const projects = [
+      // { id: 5, name: 'Snake', img_url: 'images/memorymatch.png', description: '', tech: ['HTML5', 'CSS3', 'JavaScript'], git_url: '', live_url: '' },
       { id: 5, name: 'Memory Match', img_url: 'images/memorymatch.png', description: 'My first project at General Assembly, although heavily assisted, this is one that I am really proud of and started the process to creating all that is listed below.  A simple game of memory match using JS/JQuery and HTML5/CSS3.  I occasionally go back and add some small additions.', tech: ['HTML5', 'CSS3', 'JavaScript', 'JQuery'], git_url: '', live_url: '' },
       { id: 3, name: 'Extremely Nerdy: Trivia Game', img_url: 'images/quizzle.png', description: 'A fun trivia game, this was my first logic based game/application. Eventually, I plan to go back and refactor this with Angular and re-style the entire application.', tech: ['HTML5', 'CSS3', 'JavaScript', 'JQuery'], git_url: 'https://github.com/kadkins4/project-1', live_url: '' },
       { id: 2, name: 'J&T Remodeling', img_url: 'images/jtremodel.png', description: 'J&T Remodeling is a small family owned remodeling company in Washington, DC.  I created this website to help them gain a larger client base and am still making small adjustments as I continue to learn.', tech: ['HTML5', 'CSS3'], git_url: 'https://github.com/kadkins4/J-T-Remodeling', live_url: '' },
