@@ -1,5 +1,6 @@
 ☐ Decide what you need in the page
     ☐ Backend
+        ☐ Express
     ☐ Database
     ☐ Front End - vueJS
 ☐ Template to follow?
@@ -12,3 +13,12 @@
             5. https://templated.co/p/5716150585917340
             6. https://templated.co/p/7868150585917341
             * ENDED AT PAGE 12
+☐ Pages
+    ☐ Home
+        ☐ Login
+        ☐ User Profile
+    ☐ Work
+    ☐ Blog
+        ☐ Dashboard
+        ☐ User Views
+    ☐ Contact

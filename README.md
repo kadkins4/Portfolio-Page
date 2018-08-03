@@ -5,7 +5,7 @@
 
 ## Tech Used
   - HTML5/CSS3
-  - AngularJS
+  - AngularJS -- Changing to VUEJS
   - Eventually, I will add in a backend (Leaning towards Rails)
 
 ## Other Projects
