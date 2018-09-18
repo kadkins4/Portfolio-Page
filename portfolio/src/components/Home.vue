@@ -29,14 +29,23 @@
       </div>
     </div>
 
+    <div
+      class="callToAction"
+    >
+      <app-contact-btn></app-contact-btn>
+    </div>
+
   </div>
 </template>
 
 <script>
+import ContactBtn from './ContactBtn.vue'
 import InfoBox from './InfoBox.vue'
+
 export default {
   components: {
-    InfoBox
+    InfoBox,
+    appContactBtn: ContactBtn
   },
   data () {
     return {
@@ -134,7 +143,9 @@ export default {
 
   .profPicture {
     border-radius: 50%;
-    border: 3px solid rgba(67,89,97,.5);
+    border: 3px solid black;
+    padding: 3px;
+    background: rgba(236, 154, 59, 1);
     max-height: 30vh;
     max-width: 30vw;
     width: auto;
@@ -145,6 +156,12 @@ export default {
   .infoBoxContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .callToAction {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 </style>

@@ -13,7 +13,7 @@
       v-for="( nav, index ) in navLinks" 
       :key="nav.id"
       class="navBtns"
-      @click="changeView(index)"
+      @click="changeViewFromNav(index)"
     > 
       {{ nav.title }} 
     </div>
@@ -36,8 +36,8 @@ export default {
     }
   },
   methods: {
-    changeView (i) {
-      eventBus.$emit('changeView', this.navLinks[i].component)
+    changeViewFromNav (i) {
+      eventBus.$emit('changeViewFromNav', this.navLinks[i].component)
     }
   }
 }

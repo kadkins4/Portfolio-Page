@@ -42,7 +42,7 @@ export default {
   }
 
   .header {
-    background: #ec9a3b;
+    background: rgb(236, 154, 59, 1);
     margin: 0;
   }
 </style>

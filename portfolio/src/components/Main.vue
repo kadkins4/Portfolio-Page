@@ -21,11 +21,19 @@ export default {
     }
   },
   created () {
-    eventBus.$on('changeView', ( component ) => {
+    // change view from Nav
+    eventBus.$on('changeViewFromNav', ( component ) => {
       this.activeComponent = component
     })
+
+    // change view from home page info boxes
     eventBus.$on('changeViewFromInfoBox', (component) => {
       this.activeComponent = component
+    })
+
+    // change view, prompted from ContactBtn component
+    eventBus.$on('changeToContactMe', () => {
+      this.activeComponent = 'appContact'
     })
   }
 }
