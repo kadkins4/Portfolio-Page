@@ -24,6 +24,9 @@ export default {
     eventBus.$on('changeView', ( component ) => {
       this.activeComponent = component
     })
+    eventBus.$on('changeViewFromInfoBox', (component) => {
+      this.activeComponent = component
+    })
   }
 }
 </script>

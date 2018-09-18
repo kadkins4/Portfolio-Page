@@ -5,7 +5,7 @@
     >
       <img 
         class="iconImg" 
-        src="../../assets/images/myAvatar.png" 
+        src="../assets/images/myAvatar.png" 
         alt="Avatar Icon"
       >
     </div>
