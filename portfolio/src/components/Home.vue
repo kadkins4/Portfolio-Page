@@ -29,11 +29,7 @@
       </div>
     </div>
 
-    <div
-      class="callToAction"
-    >
-      <app-contact-btn></app-contact-btn>
-    </div>
+    <app-contact-btn></app-contact-btn>
 
   </div>
 </template>
@@ -156,12 +152,6 @@ export default {
   .infoBoxContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .callToAction {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
   }
 </style>

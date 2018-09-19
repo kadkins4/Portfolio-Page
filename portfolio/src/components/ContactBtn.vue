@@ -1,8 +1,14 @@
 <template>
-  <button
-    class="btn"
-    @click.once="changeToContactMe"
-  >{{ generateBtnText }}</button>
+  <div
+    class="callToAction"
+  >
+    <button
+      class="btn"
+      @click.once="changeToContactMe"
+    >
+      {{ generateBtnText }}
+    </button>
+  </div>
 </template>
 
 <script>
@@ -28,6 +34,13 @@ export default {
 </script>
 
 <style scoped>
+  .callToAction {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .btn {
     padding: 20px 10px;
     font-family: 'Syncopate', sans-serif;

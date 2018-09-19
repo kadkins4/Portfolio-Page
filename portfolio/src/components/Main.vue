@@ -8,12 +8,20 @@
 </template>
 
 <script>
+// communication between unrelated components
 import { eventBus } from '../main'
+// components to be swapped
+import Projects from './projects/Projects.vue'
+import About from './About'
+import Products from './Products'
 import Home from './Home'
 
 export default {
   components: {
-    appHome: Home
+    appHome: Home,
+    appAbout: About,
+    appProducts: Products,
+    appProjects: Projects
   },
   data() {
     return {
