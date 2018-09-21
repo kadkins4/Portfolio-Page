@@ -55,6 +55,7 @@ export default {
   .navBtns {
     padding: 15px 25px;
     margin-left: 5px;
+    cursor: pointer;
   }
 
   .navBtns:hover {
@@ -73,5 +74,6 @@ export default {
     display: inline-block;
     height: 25px;
     width: 25px;
+    margin: 0 0 0 10px;
   }
 </style>

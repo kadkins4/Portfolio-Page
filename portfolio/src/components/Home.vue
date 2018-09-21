@@ -7,11 +7,13 @@
       <div
         class="nameContainer"
       >
+
         <h1>{{ firstName }}</h1>
-        <hr>
-        <h4>{{ title }}</h4>
-        <hr>
+        <app-line></app-line>
+        <h4>{{ title }}</h4> <!-- @extra: Add Animation of typing out with cursor on first load -->
+        <app-line></app-line>
         <h1>{{ lastName }}</h1>
+
       </div>
       <img 
         src="../assets/images/Adkins.jpg"
@@ -37,18 +39,19 @@
 <script>
 import ContactBtn from './ContactBtn.vue'
 import InfoBox from './InfoBox.vue'
+import Line from './helper/Line.vue'
 
 export default {
   components: {
     InfoBox,
-    appContactBtn: ContactBtn
+    appContactBtn: ContactBtn,
+    appLine: Line
   },
   data () {
     return {
       firstName: 'Kendall',
       lastName: 'Adkins',
       title: 'Software Developer',
-      info: null,
       views: [
         { 
           id: 2,
@@ -118,7 +121,7 @@ export default {
     width: auto;
     height: auto;
     max-width: 30vw;
-    max-height: 30vh;
+    margin: auto 0 auto 70px;
     text-align: center;
   }
 
@@ -153,5 +156,18 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  /* MEDIA QUERIES */
+  
+  @media screen and (max-width: 600px) {
+    /* 600px or less */
+    .nameContainer {
+      max-width: none;
+      margin: auto;
+    }
+    .profPicture {
+      display: none;
+    }
   }
 </style>

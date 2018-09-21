@@ -1,34 +1,69 @@
 <template>
-  <div>
-    <div>
+  <div class="projectContainer">
+    <div class="projectHeader">
 
-      <div>
-        <div>{{ projectInfo.displayName }}</div>
-        <div>Company: </div>
+      <div class="projectTitle">
+        <div class="displayName">
+          <h3>{{ projectInfo.displayName }}</h3>
+        </div>
+        <div class="company">
+          {{ projectInfo.company }}
+        </div>
       </div>
 
-      <div>
-        <div>Website: </div>
-        <div>Github: </div>
+      <div class="urlContainer">
+
+        <div 
+          v-if="projectInfo.hostedURL" 
+          class="urlButton"
+          @click="goToURL(projectInfo.hostedURL)"
+        >
+          <WebIcon />
+        </div>
+
+        <div 
+          v-if="projectInfo.githubURL" 
+          class="urlButton"
+          @click="goToURL(projectInfo.githubURL)"
+        >
+          <GithubCircleIcon />
+        </div>
+
       </div>
 
     </div>
+
     <div>
-      <div>Technology Used:
-          |<span 
+      <div class="technology">
+          <span 
           v-for="tech in projectInfo.technology"
           :key="tech"
-        >| {{ tech }} |</span>|
+        >| {{ tech }} |</span>
       </div>
     </div>
-    <div
+
+    <app-line></app-line>
+
+    <div 
+      class="description"
       v-html="projectInfo.description"
     ></div>
+
   </div>
 </template>
 
 <script>
+import WebIcon from 'vue-material-design-icons/Web.vue'
+import GithubCircleIcon from 'vue-material-design-icons/GithubCircle.vue'
+import { openInNewTab } from '../helper/utility'
+import AppLine from '../helper/Line'
+
 export default {
+  components: {
+    WebIcon,
+    GithubCircleIcon,
+    AppLine
+  },
   props: [
     'projectInfo'
   ],
@@ -38,10 +73,84 @@ export default {
   },
   computed: {
     
+  },
+  methods: {
+    goToURL (url) {
+      openInNewTab(url)
+    }
   }
 }
 </script>
 
 <style scoped>
+.projectContainer {
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid rgba(236, 154, 59, 1);
+  display: flex;
+  flex-direction: column;
+  min-width: 470px;
+  width: 600px;
+  max-width: 600px;
+  color: white;
+  font-family: 'Syncopate', sans-serif;
+}
 
+.projectHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 60%;
+  border: 1px solid red; /* @todo: remove */
+}
+
+.displayName h3 {
+  font-size: 20px;
+  margin: 10px 5px 0 15px;
+}
+
+.company {
+  margin: 0 0 10px 0;
+}
+
+.urlContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 38%;
+}
+
+.urlButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  overflow: hidden;
+  width: 75px;
+  border: 1px solid rgba(236, 154, 59, 1);
+  margin: 2px;
+}
+
+.technology {
+  margin: 10px 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.description {
+  font-size: 14px;
+  padding: 10px;
+  word-spacing: 5px;
+  line-height: 18px;
+}
 </style>
