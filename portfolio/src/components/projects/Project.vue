@@ -18,7 +18,8 @@
           class="urlButton"
           @click="goToURL(projectInfo.hostedURL)"
         >
-          <WebIcon />
+          <WebIcon title="Go To website" />
+          <div>Site</div>
         </div>
 
         <div 
@@ -26,7 +27,8 @@
           class="urlButton"
           @click="goToURL(projectInfo.githubURL)"
         >
-          <GithubCircleIcon />
+          <GithubCircleIcon title="Go To Github Repository" />
+          <b>Github</b>
         </div>
 
       </div>
@@ -131,17 +133,25 @@ export default {
 
 .urlButton {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 2px 15px 3px;
   overflow: hidden;
   width: 75px;
-  border: 1px solid rgba(236, 154, 59, 1);
-  margin: 2px;
+  border: 1px solid red;
+  margin: 3px;
+  background-color: rgba(236, 154, 59, 1);
+  cursor: pointer;
+}
+
+.urlButton:hover {
+  background-color: rgba(180, 92, 65, 0.76);
+  box-shadow: 0px 0px 5px 1px inset red;
 }
 
 .technology {
-  margin: 10px 0 15px;
+  margin: 17px 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -153,4 +163,6 @@ export default {
   word-spacing: 5px;
   line-height: 18px;
 }
+
+/* @todo: Media Query */
 </style>

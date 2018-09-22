@@ -76,6 +76,7 @@ export default {
   padding: 3px 3px 2px;
   background: rgba(236, 154, 59, 1);
   border: 3px solid black;
+  cursor: pointer;
 }
 
 .helpTip {

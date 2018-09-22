@@ -56,25 +56,19 @@ export default {
   },
   created () {
     eventBus.$on('searchThroughProjects', ( searchBarInput ) => {
-      // @wilo
-      // if there is a search parameter
-      // if certain special characters are detected return searchBarInput minus that character
-      // toggle display of some special characters are prohibited
       this.projectData.filter( ( proj ) => {
-        // ensure that they show
-        // if ( !proj.display ) return proj.showInSearch = false
-        // remove the projects that do not contain the search
-        // return proj.display = proj.displayName.includes( searchBarInput ) ? true : false
-        const technology = proj.technology.join(' ').toLowerCase()
-        const displayName = proj.displayName
-        const description = proj.description
-        const type = proj.type
+        const technology = proj.technology.join(' ').toLowerCase() // from array to string
+        const displayName = proj.displayName ? proj.displayName.toLowerCase() : ''
+        const description = proj.description ? proj.description.toLowerCase() : ''
+        const type = proj.technology.join(' ').toLowerCase()
+
+        const input = searchBarInput.toLowerCase()
 
         if (
-              displayName.includes(searchBarInput) ||
-              description.includes(searchBarInput) ||
-              type.includes(searchBarInput) ||
-              technology.includes(searchBarInput)
+              displayName.includes(input) ||
+              description.includes(input) ||
+              type.includes(input) ||
+              technology.includes(input)
             ) {
           return proj.display = true // ensure that they show
         } else {
