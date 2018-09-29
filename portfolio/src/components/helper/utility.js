@@ -6,6 +6,11 @@ export const cleanseInput = ( input ) => {
   return input
 }
 
+export const emailValidation = ( email ) => {
+  const regex = /.+@.+\..+/
+  if ( !regex.test(email) ) return false
+} 
+
 export const lowercase = input => {
   // only take one argument: object, array, or string; return arg type
   if ( typeof input !== 'object' && typeof input !== 'string' ) return 
