@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-// import "vue-material-design-icons/styles.css"
 
 Vue.config.productionTip = false
+
+module.exports = {
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/Portfolio-Page/'
+    : '/'
+}
 
 export const eventBus = new Vue()
 
