@@ -1,0 +1,53 @@
+☐ Header
+  ✔ Home @done(18-09-17 16:49)
+  ✔ Products @done(18-09-17 16:49)
+  ✔ Projects @done(18-09-17 16:49)
+  ✔ Contact @done(18-09-17 16:49)
+  ✔ About Me @done(18-09-17 17:09)
+  ☐ Hamburger Menu on 600px Media Query *
+☐ Home ( KEEP IT SIMPLE STUPID )
+  ✔ Have Links to all the above Header items with image @done(18-09-18 11:38)
+    ☐ When scroll over
+      ☐ More info / description, image change, etc
+  ✔ Work With Me Btn @done(18-09-18 12:23)
+  ☐ Images *
+    ☐ No Stock images, unless of nature
+    ☐ Most images should include self?!
+☐ About Me
+  ✔ Who am I * started(18-09-30 14:02) @done(18-09-30 15:31)
+  ☐ Download Resumé
+☐ Products
+  ☐ What is a Software Developer
+  ☐ What Do I Offer
+  ☐ 'Testimonials'
+  ☐ Work With Me - Button
+☐ Projects
+  ✔ SearchBar @done(18-09-20 13:52)
+    ✔ Displays or hides based on input @done(18-09-20 13:52)
+    ✔ Input Validation will be needed @done(18-09-20 14:32)
+  ✔ Shorten the text at the top of this page * @done(18-10-01 19:54)
+  ☐ Each project should have: *
+    ☐ Image
+    ✔ Description of Work Done @done(18-10-01 19:12)
+    ✔ Frameworks / Languages Used @done(18-10-01 19:12)
+    ✔ Company @done(18-10-01 19:12)
+    ✔ Link to Github ( if applicable ) @done(18-10-01 19:12)
+  ✔ Upload projects * @done(18-10-01 19:54)
+  ✔ Work With Me - Button @done(18-09-20 14:33)
+  ☐ Project boxes should size independent of each other
+  ☐ Implement search by type
+  ☐ Implement, click on keyword and search ( ex: click AngularJS for search )
+✔ Contact @done(18-09-29 15:33)
+  ✔ All contact info @done(18-09-29 15:31)
+  ✔ Remove Captcha @done(18-09-26 21:25)
+  ☐ error messages
+    HOLD UNTIL WE HAVE A SERVER
+  ✔ Work with me - Button @done(18-09-26 20:14)
+  ☐ Email information from people
+    HOLD UNTIL WE HAVE A SERVER
+  ✔ Social Media @done(18-09-29 15:32)
+    ✔ LinkedIn, Github, Instagram ( for Dev ) @done(18-09-29 15:31)
+    ☐ Instagram:
+      ☐ Create Page -- Start Posting
+      HOLD UNTIL HAVE CAPACITY
+☐ Mobile View * (6)
