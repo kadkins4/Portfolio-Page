@@ -32,8 +32,11 @@
         @click="goToUrl('https://open.spotify.com/user/kadkins4?si=rBA7RVkvQ2CgMPANEkn7Lg')"
         class="socialMediaIcons" id="spotify"><spotify-icon /></div>
       <div 
-      @click="goToUrl('https://twitter.com/ST6THEONE')"
-      class="socialMediaIcons" id="twitter"><twitter-icon /></div>
+        @click="goToUrl('https://twitter.com/ST6THEONE')"
+        class="socialMediaIcons" id="twitter"><twitter-icon /></div>
+      <!-- <div 
+        @click="goToUrl('https://twitter.com/ST6THEONE')"
+        class="socialMediaIcons" id="twitter"><twitter-icon /></div> -->
     </div>
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaovgm5884mQYqRTCRZra-B2C9ZJ76g20AyZkS7bQXj3g7dw/viewform?embedded=true" width="640" height="1282" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>

@@ -30,7 +30,7 @@ export default {
         { id: 1, title: 'Home', component: 'appHome'},
         { id: 2, title: 'Products', component: 'appProducts'},
         { id: 3, title: 'Projects', component: 'appProjects'},
-        { id: 4, title: 'About Me', component: 'appAboutMe'},
+        { id: 4, title: 'About', component: 'appAbout'},
         { id: 5, title: 'Contact', component: 'appContact'}
       ]
     }

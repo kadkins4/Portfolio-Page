@@ -13,7 +13,7 @@ import { eventBus } from '../main'
 // components to be swapped
 import Projects from './projects/Projects'
 import About from './About'
-import Products from './Products'
+import Products from './products/Product'
 import Home from './Home'
 import Contact from './contact/ContactPage'
 

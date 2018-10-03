@@ -16,7 +16,7 @@
 
       </div>
       <img 
-        src="../assets/images/Adkins.jpg"
+        src="@/assets/images/Adkins.jpg"
         alt="Picture of Kendall; Courtesy of DCRefined"
         class="profPicture"  
       >
@@ -59,8 +59,8 @@ export default {
           component: 'appProducts',
           description: 'this is the product section',
           // these are not the background images that will be used
-          image: require('../assets/question_block.png'),
-          color: 'yellow'
+          image: require('@/assets/images/mom.png'),
+          color: '#edb88b'
         },
         { 
           id: 3, 
@@ -68,17 +68,17 @@ export default {
           component: 'appProjects',
           description: 'this is the projects section',
           // these are not the background images that will be used
-          image: require('../assets/question_block.png'),
-          color: 'black'
+          image: require('@/assets/images/desk.jpg'),
+          color: '#17BEBB'
         },
         { 
           id: 4, 
-          title: 'About me', 
-          component: 'appAboutMe',
+          title: 'About Me', 
+          component: 'appAbout',
           description: 'this is the about me section',
           // these are not the background images that will be used
-          image: require('../assets/question_block.png'),
-          color: 'red'
+          image: require('@/assets/images/myAvatar.png'),
+          color: '#2e282a'
         },
         { 
           id: 5, 
@@ -86,8 +86,8 @@ export default {
           component: 'appContact',
           description: 'this is the contact section',
           // these are not the background images that will be used
-          image: require('../assets/question_block.png'),
-          color: 'blue'
+          image: require('@/assets/question_block.png'),
+          color: '#cd5334'
         }
       ]
     }
