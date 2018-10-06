@@ -28,7 +28,7 @@
           @click="goToURL(projectInfo.githubURL)"
         >
           <GithubCircleIcon title="Go To Github Repository" />
-          <b>Github</b>
+          <div>Github</div>
         </div>
 
       </div>
@@ -46,10 +46,18 @@
 
     <app-line></app-line>
 
-    <div 
-      class="description"
-      v-html="projectInfo.description"
-    ></div>
+    <div class="contentContainer">
+      <div>
+        <img 
+          :src="projectImage"
+          class="projectImage"  
+        />
+      </div>
+      <div 
+        class="description"
+        v-html="projectInfo.description"
+      ></div>
+    </div>
 
   </div>
 </template>
@@ -74,11 +82,14 @@ export default {
     }
   },
   computed: {
-    
+    projectImage () {
+      // return '../../assets/images/' + this.projectInfo.snapshotPath
+      return this.projectInfo.snapshotPath
+    }
   },
   methods: {
     goToURL (url) {
-      openInNewTab(url)
+      openInNewTab (url)
     }
   }
 }
@@ -110,12 +121,12 @@ export default {
   justify-content: flex-start;
   align-items: center;
   min-width: 60%;
-  border: 1px solid red; /* @todo: remove */
 }
 
 .displayName h3 {
   font-size: 20px;
   margin: 10px 5px 0 15px;
+  text-decoration: underline rgba(180, 92, 65, 0.76);
 }
 
 .company {
@@ -139,7 +150,7 @@ export default {
   padding: 2px 15px 3px;
   overflow: hidden;
   width: 75px;
-  border: 1px solid red;
+  border: 1px solid rgba(180, 92, 65, 0.76);
   margin: 3px;
   background-color: rgba(236, 154, 59, 1);
   cursor: pointer;
@@ -147,7 +158,7 @@ export default {
 
 .urlButton:hover {
   background-color: rgba(180, 92, 65, 0.76);
-  box-shadow: 0px 0px 5px 1px inset red;
+  box-shadow: 0px 0px 5px 1px inset rgba(180, 92, 65, 0.76);
 }
 
 .technology {
@@ -157,12 +168,62 @@ export default {
   justify-content: space-around;
 }
 
+.contentContainer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectImage {
+  max-width: 200px;
+  margin: 5px;
+  height: auto;
+}
+
 .description {
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 14px;
   padding: 10px;
   word-spacing: 5px;
   line-height: 18px;
 }
 
-/* @todo: Media Query */
+@media screen and (max-width: 1402px) {
+  .projectContainer {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectContainer {
+    margin: 20px 0;
+    min-width: auto;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .technology {
+    display: none;
+  }
+
+  .urlButton div {
+    display: none;
+  }
+
+  .projectHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>

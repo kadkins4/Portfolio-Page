@@ -10,7 +10,7 @@
 
         <h1>{{ firstName }}</h1>
         <app-line></app-line>
-        <h4>{{ title }}</h4> <!-- @extra: Add Animation of typing out with cursor on first load -->
+        <h4>{{ title }}</h4>
         <app-line></app-line>
         <h1>{{ lastName }}</h1>
 
@@ -54,40 +54,51 @@ export default {
       title: 'Software Developer',
       views: [
         { 
-          id: 2,
-          title: 'Products', 
-          component: 'appProducts',
-          description: 'this is the product section',
-          // these are not the background images that will be used
-          image: require('@/assets/images/mom.png'),
-          color: '#edb88b'
+          id: 1, 
+          title: 'About Me', 
+          component: 'appAbout',
+          description: 'this is the about me section',
+          image: require('@/assets/images/myAvatar.png'),
+          // color: '#2e282a'
+          // color: '#17BEBB'
+          color: '#2B2A2A',
+          // altColor: '#2e282a'
+          altView: require('@/assets/images/myAvatar.png')
         },
+        // @todo: flesh out Services and then uncomment below
+        // { 
+        //   id: 2,
+        //   title: 'Services', 
+        //   component: 'appServices',
+        //   description: 'this is the Services section',
+        //   image: require('@/assets/images/mom.png'),
+        //   // color: '#edb88b'
+        //   // color: '#17BEBB'
+        //   color: '#2B2A2A',
+        //   // altColor: '#edb88b',
+        //   altView: require('@/assets/images/serviceIcon.png')
+        // },
         { 
           id: 3, 
           title: 'Projects', 
           component: 'appProjects',
           description: 'this is the projects section',
-          // these are not the background images that will be used
           image: require('@/assets/images/desk.jpg'),
-          color: '#17BEBB'
+          // color: '#17BEBB'
+          color: '#2B2A2A',
+          // altColor: '#17BEBB',
+          altView: require('@/assets/images/projectIcon.png')
         },
         { 
           id: 4, 
-          title: 'About Me', 
-          component: 'appAbout',
-          description: 'this is the about me section',
-          // these are not the background images that will be used
-          image: require('@/assets/images/myAvatar.png'),
-          color: '#2e282a'
-        },
-        { 
-          id: 5, 
           title: 'Contact', 
           component: 'appContact',
           description: 'this is the contact section',
-          // these are not the background images that will be used
           image: require('@/assets/question_block.png'),
-          color: '#cd5334'
+          // color: '#cd5334'
+          color: '#2B2A2A',
+          // altColor: '#cd5334'
+          altView: require('@/assets/question_block.png')
         }
       ]
     }
@@ -134,10 +145,15 @@ export default {
     color: white;
   }
 
-  h4 {
+  .nameContainer h4 {
     font-family: 'Julius Sans One', sans-serif;
     text-transform: lowercase;
     color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 20px auto;
+    letter-spacing: .15em;
+    animation: typing 4.5s steps(40, end);
   }
 
   .profPicture {
@@ -156,6 +172,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
 
   /* MEDIA QUERIES */

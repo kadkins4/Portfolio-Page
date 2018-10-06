@@ -71,6 +71,26 @@ export default {
   text-transform: lowercase;
 }
 
+.searchBar::-webkit-input-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.searchBar:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+  color: white;
+}
+
+.searchBar::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+  color: white;
+}
+
+.searchBar:-ms-input-placeholder {  
+  text-align: center;
+  color: white;
+}
+
 .iconContainer {
   margin: 0 0 0 5px;
   padding: 3px 3px 2px;

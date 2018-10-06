@@ -13,7 +13,7 @@ import { eventBus } from '../main'
 // components to be swapped
 import Projects from './projects/Projects'
 import About from './About'
-import Products from './products/Product'
+import Services from './services/Services'
 import Home from './Home'
 import Contact from './contact/ContactPage'
 
@@ -21,7 +21,7 @@ export default {
   components: {
     appHome: Home,
     appAbout: About,
-    appProducts: Products,
+    appServices: Services,
     appProjects: Projects,
     appContact: Contact
   },

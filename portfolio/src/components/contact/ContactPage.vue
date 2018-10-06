@@ -258,6 +258,7 @@ export default {
 
 .contactInfoContainer p {
   font-size: 14px;
+  font-family: 'Julius Sans One', sans-serif;
   line-height: 22px;
   text-align: center;
   word-spacing: 6px;
@@ -374,13 +375,14 @@ export default {
 
 .socialMediaIcons {
   position: relative;
+  cursor: pointer;
   -webkit-animation-name: bob; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2.5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
   -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
   -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
   animation-name: bob;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-direction: alternate-reverse;   
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -435,5 +437,31 @@ export default {
   80% { top: 8px; }
   90% { top: 9px; }
   100% { top: 10px; }
+}
+
+@media screen and (max-width: 1000px) {
+  .socialMediaIcons {
+    animation: none;
+  }
+
+  iframe {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .socialMediaBar {
+    min-width: auto;
+  }
+
+  .socialMediaBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #twitter, #steam, #spotify {
+    display: none;
+  }
 }
 </style>

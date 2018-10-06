@@ -10,10 +10,10 @@ export const projects = [
     hostedURL: 'https://www.thecipherbrief.com/',
     // will have to use FS to create 
     // file path that will not break
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/tcb.png'),
     company: 'The Cipher Brief',
     technology: ['PHP', 'JavaScript', 'CSS3', 'Wordpress'],
-    description: 'My first official contract, I was tasked with revamping their pre-existing website to make it look more modern and streamline it for their viewers, along with fixing any bugs that were present.  During this process, they also changed to a subscription based model which I implemented as well.'
+    description: 'My first official contract, I was tasked with revamping their pre-existing website to make it look more modern and streamline it for their viewers, along with fixing any bugs that were present.  During this process, they also changed to a subscription based model which I implemented as well. Collaborator: <a class="collaborator" href="https://github.com/mattcfilbert" target="_blank">Matt Filbert</a>.'
   },
   {
     id: 2,
@@ -26,10 +26,10 @@ export const projects = [
     hostedURL: 'https://kadkins4.github.io/TWiCS/#/twics/new',
     // will have to use FS to create 
     // file path that will not break
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/twics.png'),
     company: 'General Assembly',
     technology: ['AngularJs', 'Rails', 'SQL', 'APIs'],
-    description: 'TWICS! Tweets to pics, was my first group project and first full usage of an API, two APIs to be exact.  We decided to focus more on the functionality of the application versus the style.  Try it out. There are two ways to interact, type in a twitter handle or type in a tweet and see the result in the form of pictures. Utilizing Twitter API and Flickr API. Frontend in AngularJS, backend in Rails.  NOTE: If you are the first person to hit the server that day, it will take about 30 seconds for the first result to return.'
+    description: 'TWICS! Tweets to pics, was my first group project and first full usage of an API, two APIs to be exact.  We decided to focus more on the functionality of the application versus the style.  Try it out. NOTE: If you are the first person to hit the server that day, it will take about 30 seconds for the first result to return. Collaborators: <a class="collaborator" href="https://github.com/cwcox" target="_blank">Charles Cox</a> & <a class="collaborator" href="https://github.com/Frewabebe" target="_blank">Frew Negash</a>.'
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const projects = [
     displayName: 'Trivia, Nerd Style',
     githubURL: 'https://github.com/kadkins4/project-1',
     hostedURL: 'https://kadkins4.github.io/project-1/',
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/quizzle.png'),
     company: 'General Assembly',
     technology: ['HTML5/CSS3', 'VueJs', 'JavaScript', 'JQuery'],
     description: 'A fun trivia game, this was my first JavaScript logic based game/application. Eventually, I plan to go back and refactor this with a framework ( most likely VueJS or ReactJS ) and re-style the entire application.'
@@ -68,7 +68,7 @@ export const projects = [
     displayName: 'TCB: Threat Conference',
     githubURL: '',
     hostedURL: 'https://www.tcbconference.com/',
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/tcbconf.png'),
     company: 'The Cipher Brief',
     technology: ['Wix', 'E-Commerce'],
     description: 'The Cipher Brief holds an annual threat conference with some of the biggest names in national security attending. This startup needed a separate website that they could easily maintain so we decided to create them a WYSIWYG ( What You See Is What You Get ) site utilizing Wix.  This allows them to change their content every year and not need to hire a developer for small changes.'
@@ -85,7 +85,7 @@ export const projects = [
     snapshotPath: '',
     company: 'The Cipher Brief',
     technology: ['Wordpress', 'PHP', 'CSS3'],
-    description: 'Working with The Cipher Brief, they were experimenting in subscription based news for some of their clients.  Working with one other developer we had 3 days to turn around a full subscription based website on Wordpress with a custom theme.  This was the BETA for their subscription based model that they now adopted on their main site.'
+    description: 'Working with The Cipher Brief, they were experimenting in subscription based news for some of their clients.  Working with one other developer we had 3 days to turn around a full subscription based website on Wordpress with a custom theme.  This was the BETA for their subscription based model that they now adopted on their main site. Collaborator: <a class="collaborator" href="https://github.com/mattcfilbert" target="_blank">Matt Filbert</a>.'
   },
   { 
     id: 7,
@@ -110,7 +110,7 @@ export const projects = [
     displayName: 'DOTA 2 HUB',
     githubURL: 'https://github.com/kadkins4/Project-2',
     hostedURL: 'https://dota2hub.herokuapp.com/',
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/d2hub.png'),
     company: 'General Assembly',
     technology: ['Heroku', 'PGSQL', 'Ruby on Rails', 'oAuth'],
     description: 'Now, you may see this and say... ehh looks like shit. But I love this project. It was my first actual application (front and backend), solely planned, from wireframe to development with a full README and I had so much fun creating it. And yes, I\'m a huge nerd! Why not go back and fix it up? I\'m working on something just as nerdy and more involved which is needed for this game. :) and I\'m so happy!'

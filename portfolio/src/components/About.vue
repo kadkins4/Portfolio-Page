@@ -1,7 +1,7 @@
 <template>
   <div class="aboutContainer">
-    <h3>Creative Applications and Websites <br />for Your Business, Hobby, or Lifestyle</h3>
-    <div class="aboutBlock">
+    <h3>Creative Applications and Websites for Your Business, Hobby, or Lifestyle</h3>
+    <div class="aboutBlock swap">
       <div class="image left">
         <img 
           src="../assets/images/dad.png"
@@ -10,7 +10,7 @@
       </div>
       <div class="text">
         <h5>Full-Stack Developer. HTML5 Game Developer. And More.</h5>
-        <p class="right">Hey, I'm Kendall. A full-stack web and application developer and new <span>HTML5 game</span> developer.  I started my career in Retail management after earning my Bachelor's of Science.  Although I've lived on the East Coast all my life, I love to travel ( internationally and across the coast ), play games ( both board and video games ), and trying out different <span>beers and whiskeys</span>.</p>
+        <p class="right">Hey, I'm Kendall. A <span>full-stack web / application developer</span> and new <span>HTML5 game</span> developer.  I started my career in Retail management after earning my Bachelor's of Science.  Although I've lived on the East Coast all of my life, I love to travel ( internationally and to the other coast ), play games ( both board and video games ), and try out different <span>beer and whiskeys</span>.</p>
       </div>
     </div>
 
@@ -19,7 +19,7 @@
     <div class="aboutBlock">
       <div class="text">
         <h5>JavaScript Is Life... Along With Other Things.</h5>
-        <p class="left">I made a career switch to become a developer after five years in management.  Upon finishing a bootcamp and several self-paced programming courses, I have worked on several contracts and a full-time position using <span>JavaScript</span>, <span>C#</span>, ASP.NET, PHP, and Ruby. My language of preference is JavaScript as I use that in all of my projects, personal and professional and am always looking for ways to improve my grapple on the language.</p>
+        <p class="left">I made the career switch to become a developer after five years in management.  Upon finishing a bootcamp and several self-paced programming courses, I have been working on several contracts and have a full-time position using <span>JavaScript</span>, <span>C#</span>, ASP.NET, PHP, and Ruby/Rails. My preferred language is JavaScript as I use that in most of my projects, personal and professional and am always looking for ways to improve my grasp of the language. This site is built with VUE.JS, a modern JavaScript framework.</p>
       </div>
       <div class="image right">
         <img 
@@ -31,7 +31,7 @@
 
     <app-line />
 
-    <div class="aboutBlock">
+    <div class="aboutBlock swap">
       <div class="image left">
         <img 
           src="../assets/images/tough_mudder.jpg"
@@ -40,7 +40,7 @@
       </div>
       <div class="text">
         <h5>Client & Customer First</h5>
-        <p class="right">From experience, I know that management can be difficult and time-consuming. I make it easier for you to manage, from giving suggestions on better <span>UX/UI</span> and translating tech speak into layman's terms to deveoping the application that is right for <span>you and your customers</span>, ultimately freeing up time for you to run your business,hobby, and live your life.</p>
+        <p class="right">From experience, I know that management can be difficult and time-consuming. I make it easier for you to manage, from giving suggestions on better <span>UX/UI</span> and translating tech speak into layman's terms to develop the application that is right for <span>you and your consumers</span>, ultimately freeing up time for you to run your business, hobby, and live your life.</p>
       </div>
     </div>
     <!-- <div class="resumeContainer">
@@ -102,11 +102,11 @@ h5 {
 
 p {
   font-size: 14px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 span {
   color: rgba(236, 154, 59, 1);
-  text-decoration: underline rgba(236, 154, 59, 1);
 }
 
 img {
@@ -126,5 +126,35 @@ img {
 
 .left {
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    min-width: auto;
+    width: auto;
+  }
+
+  h3 {
+    margin: 0 25px;
+  }
+
+  .right, .left {
+    text-align: center;
+  }
+
+  .aboutBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .swap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 </style>

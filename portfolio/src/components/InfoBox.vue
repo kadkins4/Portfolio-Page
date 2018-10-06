@@ -36,7 +36,12 @@ export default {
       return this.boxStyle = { background: this.view.color }
     },
     pictureBackground () {
-      return this.boxStyle = { background: 'url(' + this.view.image + ') center center no-repeat'}
+      if (!this.view.altColor) {
+        return this.boxStyle = { background: 'url(' + this.view.altView + ') center center no-repeat'}
+      }
+      // @wilo: allow for either image or color?!
+      return this.boxStyle = { background: this.view.altColor }
+      // return this.boxStyle = { background: 'url(' + this.view.altView + ') center center no-repeat'}
     }
   }
 }
@@ -49,8 +54,8 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
-    /* border: 1px solid white; */
-    border: 1px solid rgb(180, 92, 65);
+    /* border: 3px solid rgb(180, 92, 65); */
+    border: 3px solid #EC9A3B;
     margin: 5px;
     cursor: pointer;
   }
