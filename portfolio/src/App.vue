@@ -48,7 +48,7 @@ export default {
     margin: 0;
   }
 
-.collaborator {
-  color: rgba(236, 154, 59, 1);
-}
+  .collaborator {
+    color: rgba(236, 154, 59, 1);
+  }
 </style>
