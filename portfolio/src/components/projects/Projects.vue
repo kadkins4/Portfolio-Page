@@ -19,9 +19,11 @@
         match up... think Colleen's project of movies at General Assembly 
         or Liz and JP's art museum project. -->
       <!-- project component to display each -->
+      <!-- use show in search to change whether or not a display will
+      occur if a search criteria is happening --- otherwise default to project.display -->
       <div class="projects">
         <app-project
-          v-for="proj in projectData" 
+          v-for="proj in projectData"
           v-if="proj.display"
           :key="proj.id"
           :projectInfo="proj"
@@ -50,12 +52,27 @@ export default {
   },
   data () {
     return {
-      projectData: projects
+      projectData: []
+    }
+  },
+  computed: {
+  },
+  methods: {
+    prepData () {
+      let projectList = [];
+      // filter through array of projects -- if display is true
+      projects.filter( item => {
+        if (item.display)
+          this.projectData.push(item);
+      });
+
+      return projectList;
     }
   },
   created () {
+    this.prepData();
     eventBus.$on('searchThroughProjects', ( searchBarInput ) => {
-      this.projectData.filter( ( proj ) => {
+      this.projectData.filter( proj => {
         const technology = proj.technology.join(' ').toLowerCase() // from array to string
         const displayName = proj.displayName ? proj.displayName.toLowerCase() : ''
         const description = proj.description ? proj.description.toLowerCase() : ''
@@ -116,7 +133,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 95vw;
   height: fit-content;
 }

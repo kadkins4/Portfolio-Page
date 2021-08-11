@@ -1,5 +1,19 @@
 export const projects = [
   {
+    id: 10,
+    name: 'SAUL',
+    showInSearch: true,
+    display: true, /** bool **/ // @wilo: change to render
+    type: ['Unity2D', 'Game'],
+    displayName: 'SAUL',
+    githubURL: '',
+    hostedURL: 'https://st6theone.itch.io/saul',
+    snapshotPath: require('../../assets/images/saul.png'),
+    company: 'Game Dev',
+    technology: ['Unity2D', 'Photoshop'],
+    description: 'My first itch.io game jam submission.  A game jam is a video game making competition that gives you a theme and (usually) a short period of time to create a video game from scratch. Saul was created in less than 48 hours with one of my friends Alex.  Alex created the art and I programmed the game in Unity2D using C#.  The theme was bullet hell, which essentially means a lot of things flying at you very fast.  It\'s not much but we had a lot of fun creating it.'
+  },
+  {
     id: 1,
     name: 'The Cipher Brief Main Website',
     showInSearch: true,
@@ -54,7 +68,7 @@ export const projects = [
     displayName: 'KendallAdkins.me',
     githubURL: 'https://github.com/kadkins4/Portfolio-Page',
     hostedURL: 'http://kendalladkins.me',
-    snapshotPath: '',
+    snapshotPath: require('../../assets/images/portfolio.png'),
     company: 'STIX APPLICATIONS',
     technology: ['VueJS', 'CSS3', 'JavaScript'],
     description: 'This website that you are currently looking at.  I built this in order to have a working application utilizing VueJS, a JavaScript framework.  This took me a little over a week to build and I am still working on fine-tuning.'

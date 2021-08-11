@@ -2,15 +2,15 @@
   <div class="aboutContainer">
     <h3>Creative Applications and Websites for Your Business, Hobby, or Lifestyle</h3>
     <div class="aboutBlock swap">
-      <div class="image left">
+      <div class="left">
         <img 
           src="../assets/images/dad.png"
           alt=""
         >
       </div>
       <div class="text">
-        <h5>Full-Stack Developer. HTML5 Game Developer. And More.</h5>
-        <p class="right">Hey, I'm Kendall. A <span>full-stack web / application developer</span> and new <span>HTML5 game</span> developer.  I started my career in Retail management after earning my Bachelor's of Science.  Although I've lived on the East Coast all of my life, I love to travel ( internationally and to the other coast ), play games ( both board and video games ), and try out different <span>beer and whiskeys</span>.</p>
+        <h5>Full-Stack Developer. Unity2D Game Developer. And More.</h5>
+        <p class="right">Hey, I'm Kendall. A <span>full-stack web / application developer</span> and <span>Unity2D Game</span> developer.  I started my career in Retail management after earning my Bachelor's of Science in Accounting.  Although I've lived on the East Coast all of my life, I love to travel, cook, go to concerts, play games ( both board and video games ), and try out different <span>beer and whiskeys</span>.</p>
       </div>
     </div>
 
@@ -19,9 +19,9 @@
     <div class="aboutBlock">
       <div class="text">
         <h5>JavaScript Is Life... Along With Other Things.</h5>
-        <p class="left">I made the career switch to become a developer after five years in management.  Upon finishing a bootcamp and several self-paced programming courses, I have been working on several contracts and have a full-time position using <span>JavaScript</span>, <span>C#</span>, ASP.NET, PHP, and Ruby/Rails. My preferred language is JavaScript as I use that in most of my projects, personal and professional and am always looking for ways to improve my grasp of the language. This site is built with VUE.JS, a modern JavaScript framework.</p>
+        <p class="left">I made the career switch to become a developer after five years in management.  Upon finishing a bootcamp and several self-paced programming courses, I have been working on several contracts and have a full-time position currently using <span>JavaScript</span> and <span>Java</span>. My preferred language is JavaScript as I use that in most of my projects, personal and professional and am always looking for ways to improve my grasp of the language. This site is built with VUE.JS, a modern JavaScript framework.</p>
       </div>
-      <div class="image right">
+      <div class="right">
         <img 
           src="../assets/images/firefly.jpg"
           alt=""
@@ -32,7 +32,7 @@
     <app-line />
 
     <div class="aboutBlock swap">
-      <div class="image left">
+      <div class="left">
         <img 
           src="../assets/images/tough_mudder.jpg"
           alt=""
@@ -40,13 +40,9 @@
       </div>
       <div class="text">
         <h5>Client & Customer First</h5>
-        <p class="right">From experience, I know that management can be difficult and time-consuming. I make it easier for you to manage, from giving suggestions on better <span>UX/UI</span> and translating tech speak into layman's terms to develop the application that is right for <span>you and your consumers</span>, ultimately freeing up time for you to run your business, hobby, and live your life.</p>
+        <p class="right">From experience, I know that management can be difficult and time-consuming. I make it easier for you to manage, from giving suggestions on better <span>UX/UI</span> and translating tech speak into "layman's" terms to develop the application that is right for <span>you and your consumers</span>, ultimately freeing up time for you to run your business, hobby, and live your life.</p>
       </div>
     </div>
-    <!-- <div class="resumeContainer">
-      <button
-      >RESUME</button>
-    </div> -->
   </div>
 </template>
 

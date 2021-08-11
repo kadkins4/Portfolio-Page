@@ -122,7 +122,7 @@ export default {
   .homeHeader {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 30px 0;
   }
@@ -157,7 +157,8 @@ export default {
   }
 
   .profPicture {
-    border-radius: 50%;
+    /** border-radius: 50%;*/
+    border-radius: 10px;
     border: 3px solid black;
     padding: 3px;
     background: rgba(236, 154, 59, 1);
@@ -172,6 +173,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
+    align-self: center; 
+    width: 80vw
   }
 
   @keyframes typing {

@@ -5,6 +5,14 @@
   ✔ Contact @done(18-09-17 16:49)
   ✔ About Me @done(18-09-17 17:09)
   ✔ Hamburger Menu on 600px Media Query @started(18-10-06 09:54) @done(18-10-06 11:07) @lasted(1h13m11s)
+  ✔ Highlight active header @done(18-10-08 22:26)
+  ✔ Hamburger Icon - Requested to move to the side. not the middle @done(19-03-28 20:16)
+    It stands out but it’s not very user friendly. If someone has an iPhone or Galaxy +, they’ll have a hard time using the menu with 1 hand.
+    ✘ Middle for smaller phones @cancelled(19-03-28 19:59)
+    ✔ Align to Right for larger Phones @done(19-03-28 19:59)
+  ☐ Casing of text. Make a decision on Upper/Lower/Sentence Case
+    I did not like the font chosen. It mixes upper and lower case, but the letters have the same heights, making it difficult to read.
+
 ☐ Home ( KEEP IT SIMPLE STUPID )
   ✔ Have Links to all the above Header items with image @done(18-09-18 11:38)
     ✔ When scroll over @done(18-10-04 15:13)
@@ -18,15 +26,20 @@
     ✔ Images of the icon style like About and Contact @done(18-10-04 15:13)
     ✘ Most images should include self?! @cancelled(18-10-03 12:52)
   ✔ Remove Services from Home @started(18-10-06 09:51) @done(18-10-06 09:54) @lasted(3m40s)
+  ✔ Add more margin between infoBoxes @done(18-10-08 20:13)
+    they look squished together, especially with only 3 boxes
+
 ☐ About Me
   ✔ Who am I started(18-09-30 14:02) @done(18-09-30 15:31)
   ☐ Download Resumé
+
 ☐ Services
   ✔ Remove until ready @started(18-10-06 09:51) @done(18-10-06 09:54) @lasted(3m36s)
   ☐ What is a Software Developer
   ☐ What Do I Offer
   ☐ 'Testimonials'
   ☐ Work With Me - Button
+
 ☐ Projects
   ✔ SearchBar @done(18-09-20 13:52)
     ✔ Displays or hides based on input @done(18-09-20 13:52)
@@ -43,15 +56,18 @@
   ✔ Upload projects @done(18-10-01 19:54)
   ✔ Work With Me - Button @done(18-09-20 14:33)
   ☐ Project boxes should size independent of each other
-  ☐ Implement search by type
+  ✘ Implement search by type @cancelled(19-03-28 20:17)
   ☐ Implement, click on keyword and search ( ex: click AngularJS for search )
   ✔ Remove Red Outline ( Different Color ) @done(18-10-06 09:51)
+
+
 ✔ Contact @done(18-09-29 15:33)
   ✔ All contact info @done(18-09-29 15:31)
   ✔ Remove Captcha @done(18-09-26 21:25)
   ☐ error messages
     HOLD UNTIL WE HAVE A SERVER
   ✔ Work with me - Button @done(18-09-26 20:14)
+    ✔ On click, it jumps to bottom of contact page, should start at the top @done(18-10-08 20:15)
   ☐ Email information from people
     HOLD UNTIL WE HAVE A SERVER
   ✔ Social Media @done(18-09-29 15:32)
@@ -62,5 +78,8 @@
     ☐ Instagram:
       ☐ Create Page -- Start Posting
       HOLD UNTIL HAVE CAPACITY
+  ☐ Replace 'work with me' with a different CTA
 ✔ Mobile View * (6) @started(18-10-06 13:14) @done(18-10-06 15:32) @lasted(2h00m39s)
 ✔ General Text Font Change @done(18-10-04 15:57)
+☐ HTTPS
+☐ Justify Text

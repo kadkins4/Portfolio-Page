@@ -228,6 +228,10 @@ export default {
   //   notes ( input ) {
   //     this.noteCounter = 40 - input.length
   //   }
+  },
+  created () {
+    // ensures you always see the top of the page first
+    window.scrollTo(0,0)
   }
 }
 </script>

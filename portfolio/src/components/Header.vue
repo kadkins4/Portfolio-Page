@@ -13,12 +13,18 @@
       <div class="hamburgerIcon"
         @click="burgerLayout = !burgerLayout"
       >
-        <app-hamburger-icon></app-hamburger-icon>
+        <template v-if="!burgerLayout">
+          <app-hamburger-icon></app-hamburger-icon>
+        </template>
+        <template v-else>
+          <app-close-menu></app-close-menu>
+        </template>
       </div>
       <div 
         v-for="( nav, index ) in navLinks" 
         :key="nav.id"
         class="navBtns"
+        :class="{ activeNav: nav.active }"
         @click="changeViewFromNav(index)"
       > 
         {{ nav.title }} 
@@ -30,19 +36,21 @@
 <script>
 import { eventBus } from '../main'
 import HamburgerIcon from 'vue-material-design-icons/Menu.vue'
+import CloseMenu from 'vue-material-design-icons/CloseBoxOutline.vue'
 
 export default {
   components: {
-    appHamburgerIcon: HamburgerIcon
+    appHamburgerIcon: HamburgerIcon,
+    appCloseMenu: CloseMenu
   },
   data() {
     return {
       navLinks: [
-        { id: 1, title: 'Home', component: 'appHome'},
-        { id: 2, title: 'About', component: 'appAbout'},
-        // { id: 3, title: 'Services', component: 'appServices'},
-        { id: 4, title: 'Projects', component: 'appProjects'},
-        { id: 5, title: 'Contact', component: 'appContact'}
+        { id: 1, title: 'Home', component: 'appHome', active: true},
+        { id: 2, title: 'About', component: 'appAbout', active: false},
+        // { id: 3, title: 'Services', component: 'appServices', active: false},
+        { id: 4, title: 'Projects', component: 'appProjects', active: false},
+        { id: 5, title: 'Contact', component: 'appContact', active: false}
       ],
       burgerLayout: false
     }
@@ -56,6 +64,15 @@ export default {
     closeBurger() {
       return this.burgerLayout = false
     }
+  },
+  created () {
+    eventBus.$on('newActiveView', component => {
+      let navLinks = this.navLinks
+      navLinks.forEach( nav => {
+        nav.active = false
+        if ( nav.component === component ) return nav.active = true
+      })
+    })
   }
 }
 </script>
@@ -92,6 +109,10 @@ export default {
     box-shadow: 4px 2px 3px black;
   }
 
+  .activeNav {
+    color: white;
+  }
+
   .icon {
     align-self: center;
     margin-left: 10px;
@@ -107,6 +128,9 @@ export default {
 
   @media screen and (max-width: 600px) {
     .icon {
+      display: flex;
+      flex-direction: row;
+      align-self: flex-start;
       padding: 10px;
     }
 
@@ -117,8 +141,8 @@ export default {
     .hamburgerIcon {
       display: flex;
       width: 100%;
-      padding: 0 70px 0 0;
-      justify-content: center;
+      padding: 0 20px 0 0;
+      justify-content: flex-end;
       align-items: center;
     }
 
@@ -135,9 +159,9 @@ export default {
 
     .verticalMenu .navBtns, .verticalMenu .hamburgerIcon span {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-content: center;
-      padding: 10px 70px 0 0;
+      padding: 10px 20px 0 0;
       height: 30px;
     }
   }

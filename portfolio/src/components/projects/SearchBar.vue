@@ -11,24 +11,24 @@
         class="iconContainer"
         @click.prevent="removeSearchInput"
       >
-        <MagnifyCloseIcon
+        <Close
           fillColor="white"
           title="clear search"
         />
       </div>
     </div>
-    <p class="helpTip">note: Search is Case Insensitive</p>
+    <!-- <p class="helpTip">note: Search is Case Insensitive</p> -->
   </div>
 </template>
 
 <script>
 import { eventBus } from '../../main'
 import { cleanseInput } from '../helper/utility'
-import MagnifyCloseIcon from 'vue-material-design-icons/MagnifyClose.vue'
+import Close from 'vue-material-design-icons/Close.vue'
 
 export default {
   components: {
-    MagnifyCloseIcon
+    Close
   },
   data () {
     return {
